@@ -1,0 +1,5 @@
+import {getMediaStore,closeMediaStore} from '../server/database.js';
+import {passwordHash} from '../server/cms/auth.js';
+const password=process.env.ADMIN_RESET_PASSWORD;
+if(typeof password!=='string'||password.length<12||password.length>128){console.error('Set a unique ADMIN_RESET_PASSWORD (12–128 characters) in the private .env file before running this command.');process.exitCode=1;}
+else try{const {db}=await getMediaStore();const result=await db.collection('cms_users').updateOne({_id:'owner'},{$set:{passwordHash:await passwordHash(password)}});if(!result.matchedCount)throw new Error('No owner account exists. Use /admin/ to complete initial setup.');await db.collection('cms_sessions').deleteMany({});console.log('Owner password reset; all sessions signed out. Remove ADMIN_RESET_PASSWORD from .env now.');}catch(error){console.error(error.message==='No owner account exists. Use /admin/ to complete initial setup.'?error.message:'Password reset failed. Check the private server configuration.');process.exitCode=1;}finally{await closeMediaStore();}

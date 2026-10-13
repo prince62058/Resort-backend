@@ -1,0 +1,1887 @@
+{
+  "settings": {
+    "name": "Nature Nest",
+    "fullName": "The Nature Nest Hotel & Resort",
+    "tagline": "A little closer to nature. A little closer to you.",
+    "phone": "077778 78822",
+    "phoneInternational": "+91 77778 78822",
+    "phoneDigits": "917777878822",
+    "email": "info@thenaturenestresort.com",
+    "address": "736,738, Gram Badgonda, near Badgonda Balaji Temple, Dr. Ambedkar Nagar (Mhow), Indore, India 453441",
+    "location": "Mhow, Indore · Madhya Pradesh",
+    "maps": "https://www.google.com/maps/search/?api=1&query=The+Nature+Nest+Resort+Mhow",
+    "siteUrl": "",
+    "logo": "3d/nature-nest-emblem.webp",
+    "favicon": "branding/favicon-32-v1.png",
+    "instagram": "https://www.instagram.com/thenaturenestresort",
+    "facebook": "https://www.facebook.com/thenaturenestresort",
+    "linkedin": "https://www.linkedin.com/company/the-natures-nest-hotel-resorts/",
+    "defaultSeo": {
+      "title": "Nature Nest Resort | A little closer to nature",
+      "description": "Nature-inspired cottages and private villas in Mhow, near Indore.",
+      "keywords": [],
+      "image": "enhanced/story/story-arrival-v1.webp",
+      "noindex": false
+    },
+    "privacy": "For the resort’s current privacy policy or questions about your personal information, please contact our team.",
+    "terms": "Please request the current booking and stay terms directly from the resort before confirming your visit. Our team can explain payment, cancellation and check-in arrangements for your booking.",
+    "icons": {
+      "leaf": "3d/leaf.webp",
+      "pool": "3d/pool.webp",
+      "dining": "3d/dining.webp"
+    }
+  },
+  "pages": [
+    {
+      "id": "home",
+      "slug": "",
+      "name": "Home",
+      "template": "home",
+      "status": "published",
+      "nav": true,
+      "order": 0,
+      "body": "",
+      "images": [
+        "banner1/baneer2-transformed-min.jpeg",
+        "banner1/1.png",
+        "banner1/1l2a1581.jpg"
+      ],
+      "seo": {
+        "title": "Nature Nest Resort in Mhow, Near Indore",
+        "description": "Find your quiet at Nature Nest. Explore nature-inspired cottages, private villas, poolside afternoons and peaceful getaways in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "heading": "",
+      "accent": "",
+      "subtitle": "",
+      "footerLabel": "Home"
+    },
+    {
+      "id": "rooms",
+      "slug": "rooms",
+      "name": "Stay with us",
+      "template": "rooms",
+      "status": "published",
+      "nav": true,
+      "order": 1,
+      "body": "",
+      "images": [
+        "banner1/baneer2-transformed-min.jpeg",
+        "banner1/1.png",
+        "banner1/1l2a1581.jpg"
+      ],
+      "seo": {
+        "title": "Cottages & Private Villas in Mhow | Nature Nest",
+        "description": "Discover cottages and private villas at Nature Nest near Indore. Explore photos, amenities and starting rates, then enquire about your stay.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "heading": "",
+      "accent": "",
+      "subtitle": "",
+      "footerLabel": "Cottages & private villas"
+    },
+    {
+      "id": "services",
+      "slug": "services",
+      "name": "Experiences",
+      "template": "services",
+      "status": "published",
+      "nav": true,
+      "order": 2,
+      "body": "",
+      "images": [
+        "banner1/baneer2-transformed-min.jpeg",
+        "banner1/1.png",
+        "banner1/1l2a1581.jpg"
+      ],
+      "seo": {
+        "title": "Resort Experiences in Mhow | Nature Nest",
+        "description": "Discover poolside leisure, resort dining and celebrations in the green surroundings of Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "heading": "",
+      "accent": "",
+      "subtitle": "",
+      "footerLabel": "Services & experiences"
+    },
+    {
+      "id": "galleries",
+      "slug": "galleries",
+      "name": "Gallery",
+      "template": "galleries",
+      "status": "published",
+      "nav": true,
+      "order": 3,
+      "body": "",
+      "images": [
+        "banner1/baneer2-transformed-min.jpeg",
+        "banner1/1.png",
+        "banner1/1l2a1581.jpg"
+      ],
+      "seo": {
+        "title": "Resort Photo Gallery | Nature Nest Mhow",
+        "description": "Explore the gardens, cottages, villas, dining and pool at Nature Nest through our resort photo gallery.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "heading": "",
+      "accent": "",
+      "subtitle": "",
+      "footerLabel": "Our gallery"
+    },
+    {
+      "id": "about",
+      "slug": "about",
+      "name": "Our story",
+      "template": "about",
+      "status": "published",
+      "nav": true,
+      "order": 4,
+      "body": "",
+      "images": [
+        "enhanced/story/story-arrival-v1.webp",
+        "enhanced/story/story-unwind-v1.webp",
+        "enhanced/story/story-belong-v1.webp"
+      ],
+      "seo": {
+        "title": "Our Story | Nature Nest Hotel & Resort",
+        "description": "Meet Nature Nest, a peaceful resort in Mhow where green surroundings, thoughtful comforts and warm hospitality come together.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "heading": "",
+      "accent": "",
+      "subtitle": "",
+      "footerLabel": "About us"
+    },
+    {
+      "id": "contact",
+      "slug": "contact-us",
+      "name": "Contact",
+      "template": "contact",
+      "status": "published",
+      "nav": true,
+      "order": 5,
+      "body": "",
+      "images": [
+        "banner1/baneer2-transformed-min.jpeg",
+        "banner1/1.png",
+        "banner1/1l2a1581.jpg"
+      ],
+      "seo": {
+        "title": "Contact Nature Nest Resort | Mhow, Indore",
+        "description": "Contact Nature Nest Hotel & Resort to plan your stay, celebration or group visit in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "heading": "",
+      "accent": "",
+      "subtitle": "",
+      "footerLabel": "Contact us"
+    },
+    {
+      "id": "blog",
+      "slug": "blog",
+      "name": "Blog",
+      "template": "blog",
+      "status": "published",
+      "nav": true,
+      "order": 6,
+      "body": "",
+      "images": [
+        "banner1/baneer2-transformed-min.jpeg",
+        "banner1/1.png",
+        "banner1/1l2a1581.jpg"
+      ],
+      "seo": {
+        "title": "Travel Journal | Nature Nest Resort",
+        "description": "Read stories and ideas for an unhurried escape to Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "heading": "Stories for a",
+      "accent": "slower kind of life.",
+      "subtitle": "Little discoveries, thoughtful stays and moments worth making time for. A few pages from life at The Nature Nest.",
+      "footerLabel": "Blog & stories"
+    },
+    {
+      "id": "privacy-policy",
+      "slug": "privacy-policy",
+      "name": "Privacy policy",
+      "heading": "Your information,",
+      "accent": "treated with care.",
+      "subtitle": "How we use the information you share while planning a stay, asking a question or subscribing to our news.",
+      "body": "## Who this notice is for\nThis notice explains how {{resortName}} handles information collected through this website and related guest enquiries. For privacy questions or requests, contact our resort team at {{email}}, call {{phone}}, or write to {{address}}.\n\n## Information you share with us\n- Contact enquiries: your name, email address, optional phone number and message.\n- Reservation enquiries: your name, phone number, preferred accommodation, arrival and departure dates, and number of guests.\n- Newsletter requests: your email address and the fact that you requested resort news.\n- Follow-up correspondence: details you choose to provide when speaking with our team by phone, email or WhatsApp.\n\nPlease do not put payment card details, passwords, identity-document numbers or sensitive medical information in website forms. If your visit requires special arrangements, ask the team how to share only the information needed.\n\n## Why we use this information\nWe use enquiry details to answer your questions, check availability, discuss prices and arrangements, and help with an existing request. If you subscribe, we use your email for resort news and updates. A contact or reservation enquiry does not automatically subscribe you to marketing.\n\nBasic technical information, such as network identifiers, request times and security events, may be processed by our application, hosting and infrastructure providers to deliver the website, diagnose problems and limit spam or misuse.\n\n## Service providers and external links\nWebsite hosting, database storage and communication providers process information needed to operate these services. Our website uses MongoDB Atlas for stored enquiries and content. Depending on the service configuration, providers may process information outside your location.\n\nGoogle Fonts is used to display typography and receives normal browser connection information when fonts load. Google Maps, WhatsApp and social media open as external links when you choose them; their services have their own privacy practices. We do not send the contents of your website enquiry to those services automatically. Choosing the WhatsApp continuation opens a message containing your reservation enquiry for you to review and send.\n\nWe do not sell enquiry details or use this website's forms for advertising profiles. Information may also be shared when necessary to comply with applicable law, respond to a lawful request or address misuse and security concerns.\n\n## Cookies and browser settings\nThe public website does not currently include advertising trackers or analytics cookies. Restricted administrator access uses an essential sign-in cookie. Animation controls respect your device's reduced-motion setting; the public site does not store the animation toggle in local storage. See our Cookies & website preferences page for details.\n\n## Keeping information and protecting access\nWe keep enquiry and correspondence records to follow up on your request, support a stay, handle concerns and meet applicable record-keeping requirements. The period depends on the purpose and any related booking or legal obligation. Contact us if you would like us to review whether your information is still needed.\n\nAdministrator access is restricted, passwords are hashed and sign-in sessions expire. These measures reduce risk, but no online service can promise absolute security. Please use your own secure email account and avoid sending unnecessary personal information.\n\n## Your choices and privacy requests\nYou may contact {{email}} to ask about information you have shared, request a correction or deletion, withdraw a newsletter request, or raise a privacy concern. Use a subject such as “Privacy request” and provide enough information to locate your enquiry. We may need to verify that the request relates to you before changing or disclosing records.\n\nWe will consider your request in accordance with applicable requirements. Some information may need to be retained for a booking, accounting obligation or dispute. Withdrawing a newsletter request does not affect necessary replies about your stay. To stop resort news, email us with “Unsubscribe” and the address you used to subscribe.\n\n## Children and family enquiries\nWebsite forms are intended for adults arranging a visit. A parent or guardian should make family enquiries. Please avoid including children's personal details in open message fields. Contact us if you believe a child has submitted information that should be removed.\n\n## Changes and questions\nWe may update this notice when our website or handling of information changes. The date at the top identifies this version. For questions about this notice or a concern about your data, contact the resort team using the details below.",
+      "template": "legal",
+      "status": "published",
+      "nav": false,
+      "order": 20,
+      "footerLabel": "Privacy policy",
+      "footerGroup": "help",
+      "updated": "2026-10-14",
+      "images": [
+        "enhanced/story/story-arrival-v1.webp"
+      ],
+      "seo": {
+        "title": "Privacy policy | The Nature Nest, Mhow",
+        "description": "How we use the information you share while planning a stay, asking a question or subscribing to our news.",
+        "keywords": [
+          "privacy policy",
+          "nature nest resort",
+          "Mhow"
+        ],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "terms-and-conditions",
+      "slug": "terms-and-conditions",
+      "name": "Terms & conditions",
+      "heading": "A little clarity,",
+      "accent": "before your stay.",
+      "subtitle": "Helpful terms for using this website and enquiring about a visit to The Nature Nest.",
+      "body": "## About these terms\nThese terms apply to your use of the {{resortName}} website and the enquiries you send through it. Booking-specific rates, inclusions, payment requirements and stay conditions should be confirmed with the resort before you accept a reservation. Nothing here removes rights or remedies available under applicable law.\n\n## Enquiries and confirmed reservations\nSubmitting a website form, selecting dates or viewing a room does not reserve accommodation. Our team must confirm availability and the applicable booking terms directly with you. Please check the dates, accommodation type, guest count and agreed amount in your confirmation and tell us promptly about any error.\n\nThe website currently collects enquiries only. It does not take online payments or issue instant booking confirmations.\n\n## Prices, payments and inclusions\nDisplayed rates are indicative starting prices and may vary with dates, occupancy, accommodation and packages. Ask for the final total, applicable taxes, extra-guest charges, meal inclusions and any additional charges before paying.\n\nConfirm any deposit, balance payment and accepted payment method directly with the resort through its published contact details. Do not share card details, passwords or one-time passwords through a website form.\n\n## Arrivals and arrangements\nPlease confirm check-in and check-out times, early arrival or late departure, identification requirements and occupancy limits with the team before travelling. Requests for a particular room, special arrangement or accessibility feature require confirmation and are subject to availability.\n\nAsk about child arrangements, pets, visitors, food preferences and any planned celebration when making your enquiry. These details can depend on the accommodation and the nature of your visit.\n\n## Changes, cancellations and refunds\nThe cancellation deadline, charges, payment treatment and any refund eligibility depend on the terms communicated for your booking. Review those terms before confirming. Our Cancellation & refund policy explains how to request a change or cancellation. No standard cancellation fee or refund processing period is promised on this website.\n\nFor a booking made through a travel platform or agent, refer to that provider's confirmation and use its change or cancellation process where required.\n\n## A considerate stay\nPlease follow staff instructions and rules communicated for the property, pool and other facilities. Be considerate of other guests, supervise children and respect the natural surroundings. Tell the team promptly about a safety concern, accidental damage or a problem with your accommodation so it can be addressed.\n\n## Website content and photographs\nWe aim to keep accommodation information, photographs and descriptions useful and current. Some photographs are digitally enhanced or AI-assisted illustrations of the resort experience. They should not be treated as a guarantee of an exact room, view, furnishing or facility. Confirm features important to your stay with the team.\n\nAvailability and services can change. If information appears unclear or incorrect, please ask us to clarify before relying on it for a booking. Website text, photographs and branding must not be reused commercially without the appropriate permission.\n\n## External services and appropriate use\nMaps, social networks, WhatsApp and other linked services operate under their own terms. Do not use this website to send spam, impersonate another person, attempt unauthorised access or interfere with the service.\n\n## Questions or concerns\nIf something about your enquiry or stay needs attention, contact {{email}} or {{phone}}. Include your name, visit dates and any booking reference so the team can find the relevant details. Your legal rights remain subject to applicable law. Changes to this page do not by themselves change the terms already agreed for a confirmed reservation.",
+      "template": "legal",
+      "status": "published",
+      "nav": false,
+      "order": 21,
+      "footerLabel": "Terms & conditions",
+      "footerGroup": "help",
+      "updated": "2026-10-14",
+      "images": [
+        "enhanced/story/story-arrival-v1.webp"
+      ],
+      "seo": {
+        "title": "Terms & conditions | The Nature Nest, Mhow",
+        "description": "Helpful terms for using this website and enquiring about a visit to The Nature Nest.",
+        "keywords": [
+          "terms & conditions",
+          "nature nest resort",
+          "Mhow"
+        ],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "cancellation-refund-policy",
+      "slug": "cancellation-refund-policy",
+      "name": "Cancellation & refunds",
+      "heading": "Plans can change.",
+      "accent": "Let’s talk.",
+      "subtitle": "How to request a booking change, cancellation or information about a refund.",
+      "body": "## Check your booking confirmation\nCancellation and refund conditions can vary by accommodation, travel dates, offer and booking channel. Before confirming or paying, ask the resort for the cancellation deadline, any charges, deposit conditions and whether your chosen rate is refundable.\n\nA website enquiry alone is not a confirmed booking, and no payment is collected through the website enquiry forms.\n\n## Request a change or cancellation\nContact {{email}} or {{phone}} as soon as your plans change. Include your name, contact details, booking reference if available, dates of stay and the change you want to make. Please do not send bank passwords, card security codes or one-time passwords.\n\nKeep a copy of your request and the team's reply. A request to change dates or accommodation needs confirmation and may depend on availability, price differences and the terms of your original booking.\n\n## Refund review\nIf a payment was made, the team will review your request against the conditions agreed at booking and any applicable requirements. Ask for written confirmation of the refund decision, amount, any explained deductions and the expected processing steps.\n\nThe website does not specify a universal cancellation charge or a guaranteed refund period. The applicable conditions and any payment-provider processing time should be confirmed for your reservation. If an approved refund has not arrived as advised, contact the team with the refund reference.\n\n## Bookings made elsewhere\nIf you booked through an online travel platform, travel agent or another provider, contact that provider and check your confirmation. Its cancellation process and payment arrangements may apply. The resort can help clarify property information, but may not control a payment collected by that provider.\n\n## Late arrivals, early departures and missed stays\nIf you expect to arrive late, need to leave early or cannot travel, notify the team promptly. Ask how the conditions of your booking apply; do not assume an automatic charge or refund from this page.\n\n## Changes affecting your stay\nIf the resort tells you it cannot provide an agreed arrangement, ask the team to explain the available alternatives and any applicable refund or other resolution. Any agreement should be confirmed directly. Nothing in this information limits remedies available under applicable law.\n\n## Need help?\nFor a cancellation, payment or refund question, contact the resort at {{email}} or {{phone}}. Providing the relevant booking and payment reference helps the team investigate without needing unnecessary financial details.",
+      "template": "legal",
+      "status": "published",
+      "nav": false,
+      "order": 22,
+      "footerLabel": "Cancellation & refunds",
+      "footerGroup": "help",
+      "updated": "2026-10-14",
+      "images": [
+        "enhanced/story/story-arrival-v1.webp"
+      ],
+      "seo": {
+        "title": "Cancellation & refunds | The Nature Nest, Mhow",
+        "description": "How to request a booking change, cancellation or information about a refund.",
+        "keywords": [
+          "cancellation & refunds",
+          "nature nest resort",
+          "Mhow"
+        ],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "cookie-policy",
+      "slug": "cookie-policy",
+      "name": "Cookies & preferences",
+      "heading": "A thoughtful website,",
+      "accent": "with clear choices.",
+      "subtitle": "What your browser uses while you explore the resort and how to control it.",
+      "body": "## Public website\nThe public resort website currently has no advertising trackers or analytics cookies installed by this application. You can browse accommodation and send an enquiry without creating a guest account. Browser caching may keep images, fonts and other website files so repeat visits load faster.\n\n## Essential administrator cookies\nThe restricted admin panel uses an essential sign-in cookie named __Host-nest_admin on the production website, or nest_admin in local development. It identifies an authenticated administrator session, is not readable by page JavaScript, and expires after eight hours. Signing out clears the cookie. It is not used for advertising.\n\n## Motion and accessibility preferences\nThe site checks your device's reduced-motion preference to control automatic animations. You can also pause or resume motion with the on-page control. This public-site toggle is held in the current page session and is not written to local storage. Reloading the site uses your device preference again.\n\n## Fonts and external services\nGoogle Fonts is requested to display website typography. Its servers receive normal connection information, such as your network address, when the browser requests a font. Maps, WhatsApp and social links open third-party services only when you choose those links. Those services may use their own cookies or similar technology under their own notices.\n\nHosting and infrastructure providers may also process technical information for delivery and security. See our Privacy policy for how enquiry information is handled.\n\n## Your browser controls\nYou can use your browser settings to block or clear cookies and cached files. Blocking essential cookies can prevent administrator sign-in. Your device's accessibility settings can reduce motion across websites. Changing browser settings does not delete an enquiry already sent to the resort; contact {{email}} for a request about stored information.\n\n## Changes to this page\nIf optional analytics, advertising or other tracking features are added, this notice and any required choices should be updated before those features are used. Contact {{email}} if you have a question about the website's current behaviour.",
+      "template": "legal",
+      "status": "published",
+      "nav": false,
+      "order": 23,
+      "footerLabel": "Cookies & preferences",
+      "footerGroup": "help",
+      "updated": "2026-10-14",
+      "images": [
+        "enhanced/story/story-arrival-v1.webp"
+      ],
+      "seo": {
+        "title": "Cookies & preferences | The Nature Nest, Mhow",
+        "description": "What your browser uses while you explore the resort and how to control it.",
+        "keywords": [
+          "cookies & preferences",
+          "nature nest resort",
+          "Mhow"
+        ],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "guest-information",
+      "slug": "guest-information",
+      "name": "Guest information",
+      "heading": "A few helpful answers.",
+      "accent": "A warmer welcome.",
+      "subtitle": "Booking questions, practical details and a direct line to our resort team.",
+      "body": "## Before you visit\nTell our team your preferred dates, guest count and the kind of stay you have in mind. We will help you check availability and confirm the details for your visit.\n\n## Your pre-arrival checklist\n- Confirm the final price, taxes, inclusions and payment arrangements.\n- Ask for check-in and check-out times and any identification requirements.\n- Review the cancellation and refund conditions for your selected booking.\n- Discuss accessibility, food preferences, children, pets or special arrangements before confirming.\n- Keep your written booking confirmation and the resort's contact details handy.\n\n## Get in touch\nFor a new enquiry or help with an existing booking, call {{phone}} or email {{email}}. For changes to a confirmed reservation, include your name, visit dates and booking reference if you have one. Please avoid sending card details or sensitive documents in an open website message.",
+      "template": "support",
+      "status": "published",
+      "nav": false,
+      "order": 24,
+      "footerLabel": "Guest information",
+      "footerGroup": "help",
+      "updated": "2026-10-14",
+      "images": [
+        "enhanced/story/story-arrival-v1.webp"
+      ],
+      "seo": {
+        "title": "Guest information | The Nature Nest, Mhow",
+        "description": "Booking questions, practical details and a direct line to our resort team.",
+        "keywords": [
+          "guest information",
+          "nature nest resort",
+          "Mhow"
+        ],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "slug": "villa-16",
+      "name": "Private Villa 16",
+      "price": 5499,
+      "description": "🌿  Villa No. 16 – A Luxurious Retreat at Nature Nest   Welcome to  Villa No. 16  at  Nature Nest Hotel & Resorts , where tranquility and luxury blend seamlessly. Whether you're looking for a  romantic getaway, a family escape, or a peaceful retreat , this villa offers the perfect balance of comfort and nature’s beauty.  🌟  Why Choose Villa No. 16?  ✔  Spacious & Elegant Interiors  – Designed for ultimate relaxation and style. ✔  Private Sit-Out Area  – Enjoy morning tea with fresh air and scenic views. ✔  Surrounded by Nature  – Wake up to the melody of birds and lush greenery. ✔  Ideal for Couples, Families & Friends  – A serene escape for every occasion. ✔  Modern Amenities  – Well-equipped to ensure a comfortable and memorable stay.  🍃  Unwind, Refresh & Reconnect with Nature  At  Nature Nest , we go beyond just offering a stay—we provide an experience that refreshes your soul. Let  Villa No. 16  be your gateway to relaxation and unforgettable moments.  📍  Book your stay today and indulge in the beauty of Villa No. 16!  🌿✨",
+      "images": [
+        "cottage/1l2a1513-1-850x460.JPG",
+        "cottage/1l2a1512-1-850x460.JPG",
+        "cottage/1l2a1518-1-850x460.JPG",
+        "cottage/1l2a1526-1-850x460.JPG",
+        "cottage/1l2a1525-1-850x460.JPG",
+        "cottage/1l2a1523-1-850x460.JPG",
+        "cottage/1l2a1522-1-850x460.JPG",
+        "cottage/1l2a1521-1-850x460.JPG",
+        "cottage/1l2a1520-1-850x460.JPG",
+        "cottage/1l2a1519-1-850x460.JPG",
+        "cottage/1l2a1516-1-850x460.JPG",
+        "cottage/1l2a1515-1-850x460.JPG"
+      ],
+      "type": "Private villas",
+      "id": "villa-16",
+      "order": 5,
+      "status": "published",
+      "featured": false,
+      "summary": "Elegant interiors and peaceful green surroundings for an unhurried escape.",
+      "homeImages": [
+        "cottage/1l2a1513-1-850x460.JPG",
+        "cottage/1l2a1512-1-850x460.JPG",
+        "cottage/1l2a1518-1-850x460.JPG"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 16 | Nature Nest Resort Mhow",
+        "description": "Elegant interiors and peaceful green surroundings for an unhurried escape.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "private-villa-1",
+      "name": "Private Villa 1",
+      "price": 12000,
+      "description": "Step into  Private Villa 1 , a heaven of luxury and tranquility, nestled amidst lush greenery. Designed for ultimate comfort, this villa offers a perfect blend of modern elegance and natural beauty. Whether you're seeking a romantic escape, a family retreat, or a peaceful getaway, this villa provides the ideal ambiance to relax and rejuvenate.   Key Features:    Thoughtfully designed interiors with stylish decor  Private sit-out area with breathtaking nature views  Modern amenities ensuring a comfortable stay  Peaceful surroundings for ultimate relaxation  Ideal for couples, families, and solo travelers  Personalized hospitality for a memorable experience   Reconnect with nature while enjoying world-class comfort.  Private Villa 1  at The Nature Nest Hotel & Resorts promises an unforgettable stay filled with relaxation, luxury, and serenity.",
+      "images": [
+        "places/farm-1-new-pdf-page-0003-850x460.jpg",
+        "places/farm-1-new-pdf-page-0009-850x460.jpg",
+        "places/farm-1-new-pdf-page-0007-850x460.jpg",
+        "places/farm-1-new-pdf-page-0006-850x460.jpg",
+        "places/farm-1-new-pdf-page-0005-850x460.jpg",
+        "places/farm-1-new-pdf-page-0004-850x460.jpg",
+        "places/farm-1-new-pdf-page-0002-850x460.jpg",
+        "places/farm-1-new-pdf-page-0001-850x460.jpg"
+      ],
+      "type": "Private villas",
+      "id": "private-villa-1",
+      "order": 3,
+      "status": "published",
+      "featured": true,
+      "summary": "Thoughtful interiors and your own sit-out. Settle into a slower rhythm.",
+      "homeImages": [
+        "places/farm-1-new-pdf-page-0003.jpg",
+        "places/farm-1-new-pdf-page-0007.jpg",
+        "places/farm-1-new-pdf-page-0009.jpg"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 1 | Nature Nest Resort Mhow",
+        "description": "Thoughtful interiors and your own sit-out. Settle into a slower rhythm.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "private-villa-6",
+      "name": "Private Villa 6",
+      "price": 2999,
+      "description": "Welcome to  Private Villa 6 , a luxurious retreat designed for tranquility and comfort. Nestled amidst lush greenery, this villa offers an intimate escape with elegant interiors and modern amenities. Whether you're looking for a romantic getaway, a peaceful family stay, or a solo retreat, this villa provides the perfect ambiance to relax and rejuvenate.   Key Features:    Spacious and stylishly designed interiors  Private sit-out area with stunning nature views  Premium furnishings and modern comforts  Peaceful surroundings for ultimate relaxation  Ideal for couples, families, and nature lovers  Personalized hospitality for a memorable stay   Embrace the beauty of nature while enjoying world-class comfort.  Private Villa 6  at The Nature Nest Hotel & Resorts is your perfect escape into serenity and luxury.",
+      "images": [
+        "places/farm-6-page-0002-850x460.jpg",
+        "places/farm-6-page-0006-850x460.jpg"
+      ],
+      "type": "Private villas",
+      "id": "private-villa-6",
+      "order": 6,
+      "status": "published",
+      "featured": false,
+      "summary": "An intimate retreat with a private sit-out and nature all around.",
+      "homeImages": [
+        "places/farm-6-page-0002-850x460.jpg",
+        "places/farm-6-page-0006-850x460.jpg"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 6 | Nature Nest Resort Mhow",
+        "description": "An intimate retreat with a private sit-out and nature all around.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "luxury-right-cottage",
+      "name": "Luxury Right Cottage",
+      "price": 4999,
+      "description": "Cottage at The Nature Nest Hotel & Resort   Experience a harmonious blend of comfort and nature in our thoughtfully designed cottages. Each cottage offers a serene retreat that complements the beauty of the surrounding landscape.   Key Features:     Rustic Design with Modern Comforts:   Beautifully crafted interiors with natural materials and earthy tones.  Equipped with cozy beds, stylish furnishings, and modern amenities.     Private Veranda or Balcony:   Enjoy morning coffee or evening tea while soaking in scenic views.  Perfect for unwinding with the soothing sounds of nature.     Panoramic Views:   Overlook lush greenery, tranquil gardens, or serene water bodies.     Climate Control:   Air-conditioned interiors to keep you cool in summer and warm in winter.     Eco-Friendly Amenities:   Complimentary toiletries and linens made from sustainable materials.     Seamless Connectivity:   Wi-Fi access to stay connected while enjoying your escape.     In-Room Dining:   Savor delicious meals in the privacy of your cottage.     Recreational Access:   Easy access to resort facilities like the swimming pool, nature trails, and wellness spa.     Each cottage is a sanctuary of peace and relaxation, making your stay truly unforgettable. Whether you’re seeking a romantic getaway or a family retreat, our cottages are designed to cater to your every need.",
+      "images": [
+        "cottage/3-850x460.png",
+        "cottage/10-850x460.png",
+        "cottage/9-850x460.png",
+        "cottage/12-850x460.png",
+        "cottage/8-850x460.png",
+        "cottage/7-850x460.png",
+        "cottage/6-850x460.png",
+        "cottage/5-850x460.png",
+        "cottage/13-850x460.png",
+        "cottage/2-850x460.png",
+        "cottage/11-850x460.png",
+        "cottage/1-850x460.png"
+      ],
+      "type": "Cottages",
+      "id": "luxury-right-cottage",
+      "order": 2,
+      "status": "published",
+      "featured": false,
+      "summary": "Your quiet corner of the resort, with nature just beyond the door.",
+      "homeImages": [
+        "cottage/3-850x460.png",
+        "cottage/10-850x460.png",
+        "cottage/9-850x460.png"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Luxury Right Cottage | Nature Nest Resort Mhow",
+        "description": "Your quiet corner of the resort, with nature just beyond the door.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "private-villa-10",
+      "name": "Private Villa 10",
+      "price": 5499,
+      "description": "Discover the perfect blend of comfort and nature at  Private Villa 10 . Surrounded by lush greenery, this elegantly designed villa offers a peaceful retreat for those seeking relaxation and privacy. Whether you're planning a romantic escape or a quiet getaway, this villa provides the ideal ambiance to unwind.   Key Features:    Spacious and beautifully designed interiors  Private sit-out area with scenic views  Modern amenities for a comfortable stay  Serene and peaceful surroundings  Ideal for couples, families, and nature lovers  Personalized hospitality for a memorable experience   Immerse yourself in nature while enjoying the finest comforts.  Private Villa 10  at The Nature Nest Hotel & Resorts is your gateway to relaxation and tranquility.",
+      "images": [
+        "places/farm-10-temporary-page-0015-850x460.jpg",
+        "places/farm-10-temporary-page-0012-850x460.jpg",
+        "places/farm-10-temporary-page-0011-850x460.jpg",
+        "places/farm-10-temporary-page-0009-850x460.jpg",
+        "places/farm-10-temporary-page-0008-850x460.jpg",
+        "places/farm-10-temporary-page-0007-850x460.jpg",
+        "places/farm-10-temporary-page-0006-850x460.jpg",
+        "places/farm-10-temporary-page-0004-850x460.jpg"
+      ],
+      "type": "Private villas",
+      "id": "private-villa-10",
+      "order": 7,
+      "status": "published",
+      "featured": false,
+      "summary": "A peaceful setting, warm interiors and a little space to call your own.",
+      "homeImages": [
+        "places/farm-10-temporary-page-0015-850x460.jpg",
+        "places/farm-10-temporary-page-0012-850x460.jpg",
+        "places/farm-10-temporary-page-0011-850x460.jpg"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 10 | Nature Nest Resort Mhow",
+        "description": "A peaceful setting, warm interiors and a little space to call your own.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-9",
+      "name": "Private Villa 9",
+      "price": 6999,
+      "description": "🌿  Nature Nest Villas: Your Serene Escape in Nature   Welcome to  Nature Nest Hotel & Resorts , where  luxury and nature unite  to create the ultimate retreat. Our  exclusive villas  are designed to offer a  peaceful sanctuary , combining  comfort, elegance, and stunning natural beauty . Whether you're planning a  romantic escape, a family vacation, or a rejuvenating break , our villas provide the  perfect setting for relaxation and unforgettable moments .  🌟  Why Choose Nature Nest Villas?   ✔  Spacious & Elegant Interiors —thoughtfully designed for a cozy yet luxurious stay. ✔  Private Sit-Out Areas:  Enjoy tranquil mornings & mesmerizing sunsets. ✔  Nature All Around:  Wake up to birdsong and breathe in the fresh air. ✔  Perfect for Couples, Families & Friends  An idyllic getaway for every occasion. ✔  Modern Comforts:  Equipped with all essential amenities for a seamless stay.  🍃  A Retreat for Your Mind, Body & Soul   At  Nature Nest , we believe in offering more than just a stay—we create an  experience that soothes and rejuvenates . Immerse yourself in  serene surroundings, unwind in our luxurious villas, and embrace the beauty of nature  like never before.  📍  Book your escape today  and discover the perfect harmony of  comfort and nature ! 🌿✨",
+      "images": [
+        "cottage/1l2a1491-1-850x460.JPG",
+        "cottage/1l2a1489-1-850x460.JPG",
+        "cottage/1l2a1488-1-850x460.JPG",
+        "cottage/1l2a1483-1-850x460.JPG",
+        "cottage/1l2a1474-1-850x460.JPG",
+        "cottage/1l2a1492-2-850x460.JPG",
+        "cottage/1l2a1490-1-850x460.JPG",
+        "cottage/1l2a1487-1-850x460.JPG",
+        "cottage/1l2a1482-1-850x460.JPG",
+        "cottage/1l2a1481-1-850x460.JPG",
+        "cottage/1l2a1480-1-850x460.JPG",
+        "cottage/1l2a1479-1-850x460.JPG",
+        "cottage/1l2a1478-1-850x460.JPG",
+        "cottage/1l2a1477-1-850x460.JPG",
+        "cottage/1l2a1475-1-850x460.JPG"
+      ],
+      "type": "Private villas",
+      "id": "villa-9",
+      "order": 4,
+      "status": "published",
+      "featured": true,
+      "summary": "Space to reconnect, a private sit-out and the simple pleasure of being together.",
+      "homeImages": [
+        "cottage/1l2a1491.JPG",
+        "cottage/1l2a1489.JPG",
+        "cottage/1l2a1483.JPG"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 9 | Nature Nest Resort Mhow",
+        "description": "Space to reconnect, a private sit-out and the simple pleasure of being together.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-4",
+      "name": "Private Villa 4",
+      "price": 4999,
+      "description": "🌿  Villa No. 4 – A Tranquil Escape at Nature Nest   Welcome to  Villa No. 4  at  Nature Nest Hotel & Resorts , where nature’s serenity meets modern comfort. This villa is designed for those who seek a peaceful retreat, whether for a  romantic getaway, a family vacation, or a rejuvenating break  amidst lush greenery.  🌟  Why Choose Villa No. 4?  ✔  Spacious & Elegant Interiors  – Experience comfort in a beautifully designed space. ✔  Private Sit-Out Area  – Relax and unwind with scenic views and fresh air. ✔  Surrounded by Nature  – Wake up to the soothing sounds of birds and rustling leaves. ✔  Perfect for Couples, Families & Friends  – A cozy haven for all kinds of travelers. ✔  Modern Amenities  – Equipped with everything you need for a seamless and enjoyable stay.  🍃  Relax, Rejuvenate & Reconnect with Nature  At  Nature Nest , we offer more than just a stay—we provide an experience that refreshes your mind, body, and soul. Let  Villa No. 4  be your escape into tranquility and luxury.  📍  Book your stay today and embrace the beauty of Villa No. 4!  🌿✨",
+      "images": [
+        "cottage/1l2a1550-1-850x460.JPG",
+        "cottage/1l2a1549-1-850x460.JPG",
+        "cottage/1l2a1557-1-850x460.JPG",
+        "cottage/1l2a1553-1-850x460.JPG",
+        "cottage/1l2a1556-1-850x460.JPG",
+        "cottage/1l2a1555-1-850x460.JPG",
+        "cottage/1l2a1554-1-850x460.JPG",
+        "cottage/1l2a1552-1-850x460.JPG",
+        "cottage/1l2a1551-1-850x460.JPG"
+      ],
+      "type": "Private villas",
+      "id": "villa-4",
+      "order": 8,
+      "status": "published",
+      "featured": false,
+      "summary": "Morning tea outside. Cosy evenings in. A stay at your own pace.",
+      "homeImages": [
+        "cottage/1l2a1550-1-850x460.JPG",
+        "cottage/1l2a1549-1-850x460.JPG",
+        "cottage/1l2a1557-1-850x460.JPG"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 4 | Nature Nest Resort Mhow",
+        "description": "Morning tea outside. Cosy evenings in. A stay at your own pace.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "luxury-middle-cottage",
+      "name": "Luxury Middle Cottage",
+      "price": 4999,
+      "description": "Cottage at The Nature Nest Hotel & Resort   Experience a harmonious blend of comfort and nature in our thoughtfully designed cottages. Each cottage offers a serene retreat that complements the beauty of the surrounding landscape.   Key Features:     Rustic Design with Modern Comforts:   Beautifully crafted interiors with natural materials and earthy tones.  Equipped with cozy beds, stylish furnishings, and modern amenities.     Private Veranda or Balcony:   Enjoy morning coffee or evening tea while soaking in scenic views.  Perfect for unwinding with the soothing sounds of nature.     Panoramic Views:   Overlook lush greenery, tranquil gardens, or serene water bodies.     Climate Control:   Air-conditioned interiors to keep you cool in summer and warm in winter.     Eco-Friendly Amenities:   Complimentary toiletries and linens made from sustainable materials.     Seamless Connectivity:   Wi-Fi access to stay connected while enjoying your escape.     In-Room Dining:   Savor delicious meals in the privacy of your cottage.     Recreational Access:   Easy access to resort facilities like the swimming pool, nature trails, and wellness spa.     Each cottage is a sanctuary of peace and relaxation, making your stay truly unforgettable. Whether you’re seeking a romantic getaway or a family retreat, our cottages are designed to cater to your every need.",
+      "images": [
+        "cottage/2-850x460.png",
+        "cottage/9-850x460.png",
+        "cottage/10-850x460.png",
+        "cottage/8-850x460.png",
+        "cottage/4-850x460.png",
+        "cottage/7-850x460.png",
+        "cottage/6-850x460.png",
+        "cottage/5-850x460.png",
+        "cottage/3-850x460.png",
+        "cottage/1-850x460.png"
+      ],
+      "type": "Cottages",
+      "id": "luxury-middle-cottage",
+      "order": 1,
+      "status": "published",
+      "featured": true,
+      "summary": "Earthy interiors, everyday comforts and a little more time to unwind.",
+      "homeImages": [
+        "cottage/2.png",
+        "cottage/10.png",
+        "cottage/9.png"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Luxury Middle Cottage | Nature Nest Resort Mhow",
+        "description": "Earthy interiors, everyday comforts and a little more time to unwind.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-15",
+      "name": "Private Villa 15",
+      "price": 4999,
+      "description": "🌿  Villa No. 15: Your Private Heaven at Nature Nest   Welcome to  Villa No. 15  at  Nature Nest Hotel & Resorts , where nature and luxury blend seamlessly to offer you an exclusive retreat. This beautifully designed villa provides the perfect escape, whether you're seeking a  romantic getaway, a family vacation, or a rejuvenating break . Immerse yourself in tranquility, surrounded by lush greenery and modern comforts.  🌟  Why Choose Villa No. 15?  ✔  Spacious & Elegant Interiors:  Designed for ultimate comfort and style. ✔  Private Sit-Out Area:  Start your day with fresh air and unwind with breathtaking sunsets. ✔  Surrounded by Nature:  Wake up to the soothing sounds of birds and rustling leaves. ✔  Perfect for Couples, Families & Friends  A serene retreat for every occasion. ✔  Modern Amenities —thoughtfully equipped for a seamless and luxurious stay.  🍃  A Sanctuary for Relaxation & Rejuvenation  At  Nature Nest , we don’t just offer a stay—we create an experience. Let  Villa No. 15  be your sanctuary where you reconnect with nature, unwind in luxurious comfort, and make unforgettable memories.  📍  Book your stay now and experience the charm of Villa No. 15!  🌿✨",
+      "images": [
+        "cottage/1l2a1495-1-850x460.JPG",
+        "cottage/1l2a1496-1-850x460.JPG",
+        "cottage/1l2a1493-1-850x460.JPG",
+        "cottage/1l2a1508-1-850x460.JPG",
+        "cottage/1l2a1506-1-850x460.JPG",
+        "cottage/1l2a1504-1-850x460.JPG",
+        "cottage/1l2a1503-1-850x460.JPG",
+        "cottage/1l2a1500-1-850x460.JPG",
+        "cottage/1l2a1505-1-850x460.JPG"
+      ],
+      "type": "Private villas",
+      "id": "villa-15",
+      "order": 9,
+      "status": "published",
+      "featured": false,
+      "summary": "Make yourself at home in a quiet villa surrounded by the resort’s greenery.",
+      "homeImages": [
+        "cottage/1l2a1495-1-850x460.JPG",
+        "cottage/1l2a1496-1-850x460.JPG",
+        "cottage/1l2a1493-1-850x460.JPG"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 15 | Nature Nest Resort Mhow",
+        "description": "Make yourself at home in a quiet villa surrounded by the resort’s greenery.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "luxury-left-cottage",
+      "name": "Luxury Left Cottage",
+      "price": 4999,
+      "description": "Cottage at The Nature Nest Hotel & Resort   Experience a harmonious blend of comfort and nature in our thoughtfully designed cottages. Each cottage offers a serene retreat that complements the beauty of the surrounding landscape.   Key Features:     Rustic Design with Modern Comforts:   Beautifully crafted interiors with natural materials and earthy tones.  Equipped with cozy beds, stylish furnishings, and modern amenities.     Private Veranda or Balcony:   Enjoy morning coffee or evening tea while soaking in scenic views.  Perfect for unwinding with the soothing sounds of nature.     Panoramic Views:   Overlook lush greenery, tranquil gardens, or serene water bodies.     Climate Control:   Air-conditioned interiors to keep you cool in summer and warm in winter.     Eco-Friendly Amenities:   Complimentary toiletries and linens made from sustainable materials.     Seamless Connectivity:   Wi-Fi access to stay connected while enjoying your escape.     In-Room Dining:   Savor delicious meals in the privacy of your cottage.     Recreational Access:   Easy access to resort facilities like the swimming pool, nature trails, and wellness spa.     Each cottage is a sanctuary of peace and relaxation, making your stay truly unforgettable. Whether you’re seeking a romantic getaway or a family retreat, our cottages are designed to cater to your every need.",
+      "images": [
+        "cottage/1-850x460.png",
+        "cottage/9-850x460.png",
+        "cottage/4-850x460.png",
+        "cottage/10-850x460.png",
+        "cottage/8-850x460.png",
+        "cottage/7-850x460.png",
+        "cottage/6-850x460.png",
+        "cottage/5-850x460.png",
+        "cottage/3-850x460.png",
+        "cottage/2-850x460.png",
+        "cottage/11-850x460.png"
+      ],
+      "type": "Cottages",
+      "id": "luxury-left-cottage",
+      "order": 0,
+      "status": "published",
+      "featured": true,
+      "summary": "A cosy retreat, green views and a veranda made for your morning coffee.",
+      "homeImages": [
+        "enhanced/cottages-regenerated-v1.webp",
+        "cottage/9.png",
+        "cottage/4.png"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Luxury Left Cottage | Nature Nest Resort Mhow",
+        "description": "A cosy retreat, green views and a veranda made for your morning coffee.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-3",
+      "name": "Private Villa 3",
+      "price": 4999,
+      "description": "🌿  Villa No. 3 – A Cozy Retreat at Nature Nest   Welcome to  Villa No. 3  at  Nature Nest Hotel & Resorts , a perfect blend of nature’s tranquility and modern luxury. Whether you're planning a  romantic escape, a peaceful family vacation, or a refreshing getaway , this villa offers an intimate and comfortable stay surrounded by lush greenery.  🌟  Why Choose Villa No. 3?  ✔  Elegant & cozy Interiors— Designed for relaxation and comfort. ✔  Private Sit-Out Area:  Enjoy the serenity of nature with your morning coffee or evening tea. ✔  Surrounded by greenery—wake  up to the melody of birds and the freshness of pure air. ✔  Ideal for Couples & Small Families  A charming retreat for every special occasion. ✔  Modern Amenities:  Equipped with all essentials for a hassle-free and delightful stay.  🍃  Unwind in Nature’s Lap  At  Nature Nest , we craft experiences that help you reconnect with nature while indulging in comfort. Let  Villa No. 3  be your serene hideaway, where you relax, rejuvenate, and create unforgettable memories.  📍  Book your stay today and embrace the beauty of Villa No. 3!  🌿✨",
+      "images": [
+        "cottage/1l2a1565-1-850x460.JPG",
+        "cottage/1l2a1560-1-850x460.JPG",
+        "cottage/1l2a1568-1-850x460.JPG",
+        "cottage/1l2a1563-1-850x460.JPG",
+        "cottage/1l2a1562-1-850x460.JPG",
+        "cottage/1l2a1561-1-850x460.JPG",
+        "cottage/1l2a1566-1-850x460.JPG",
+        "cottage/1l2a1567-1-850x460.JPG",
+        "cottage/1l2a1564-1-850x460.JPG"
+      ],
+      "type": "Private villas",
+      "id": "villa-3",
+      "order": 10,
+      "status": "published",
+      "featured": false,
+      "summary": "Leave the everyday behind and enjoy a little comfort, close to nature.",
+      "homeImages": [
+        "cottage/1l2a1565-1-850x460.JPG",
+        "cottage/1l2a1560-1-850x460.JPG",
+        "cottage/1l2a1568-1-850x460.JPG"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 3 | Nature Nest Resort Mhow",
+        "description": "Leave the everyday behind and enjoy a little comfort, close to nature.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-2",
+      "name": "Private Villa 2",
+      "price": 5499,
+      "description": "🌿 Nature Nest Villas – A Tranquil Escape Amidst Nature   Welcome to  Nature Nest Hotel & Resorts , where  luxury meets nature  in perfect harmony. Our  exclusive villas  are designed to offer a peaceful retreat, blending comfort, elegance, and breathtaking natural surroundings. Whether you're seeking a  romantic getaway, a family vacation, or a rejuvenating escape , our villas provide the ideal setting for relaxation and unforgettable memories.   Why Choose Our Villas?   ✔  Spacious & Stylish Interiors  – Designed for comfort and elegance. ✔  Private Sit-Out Areas  – Enjoy serene mornings & stunning sunsets. ✔  Surrounded by Nature  – Wake up to the sound of birds and fresh air. ✔  Perfect for Couples, Families & Friends  – A getaway for every occasion. ✔  Modern Amenities  – Luxurious comfort with all essential facilities.   Experience Unmatched Serenity   At  Nature Nest , we believe in creating an experience that  rejuvenates your mind, body, and soul . Immerse yourself in the  beauty of nature , relax in our  well-appointed villas , and indulge in a truly  refreshing escape .  📍  Book your stay now and discover the perfect blend of luxury and nature!",
+      "images": [
+        "cottage/1l2a1558-1-850x460.JPG",
+        "cottage/1l2a1542-1-850x460.JPG",
+        "cottage/1l2a1547-1-850x460.JPG",
+        "cottage/1l2a1545-1-850x460.JPG",
+        "cottage/1l2a1544-1-850x460.JPG",
+        "cottage/1l2a1543-1-850x460.JPG",
+        "cottage/1l2a1546-1-850x460.JPG",
+        "cottage/1l2a1548-1-850x460.JPG"
+      ],
+      "type": "Private villas",
+      "id": "villa-2",
+      "order": 11,
+      "status": "published",
+      "featured": false,
+      "summary": "A private place to pause, put your feet up and enjoy your time together.",
+      "homeImages": [
+        "cottage/1l2a1558-1-850x460.JPG",
+        "cottage/1l2a1542-1-850x460.JPG",
+        "cottage/1l2a1547-1-850x460.JPG"
+      ],
+      "amenities": [
+        "Wi-Fi",
+        "Air conditioning",
+        "Dining",
+        "Security",
+        "Pool access",
+        "Green surroundings"
+      ],
+      "seo": {
+        "title": "Private Villa 2 | Nature Nest Resort Mhow",
+        "description": "A private place to pause, put your feet up and enjoy your time together.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    }
+  ],
+  "experiences": [
+    {
+      "id": "wellness-spa",
+      "slug": "wellness-spa",
+      "name": "A slower kind of morning",
+      "tag": "POOL & LEISURE",
+      "text": "A refreshing dip. A sunlit afternoon. Nowhere else you need to be.",
+      "images": [
+        "enhanced/pool-regenerated-v1.webp",
+        "banners/2024-08-24-2-1.jpg",
+        "enhanced/story/story-unwind-v1.webp"
+      ],
+      "status": "published",
+      "order": 0,
+      "seo": {
+        "title": "A slower kind of morning | Nature Nest",
+        "description": "A refreshing dip. A sunlit afternoon. Nowhere else you need to be.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "restaurants-bars",
+      "slug": "restaurants-bars",
+      "name": "Good food. Great company.",
+      "tag": "DINE WITH US",
+      "text": "Come together over comforting flavours and conversations that linger.",
+      "images": [
+        "banner1/1l2a1574.jpg",
+        "enhanced/story/story-belong-v1.webp",
+        "banners/2023-04-24-1-1.jpg"
+      ],
+      "status": "published",
+      "order": 1,
+      "seo": {
+        "title": "Good food. Great company. | Nature Nest",
+        "description": "Come together over comforting flavours and conversations that linger.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "special-offers",
+      "slug": "special-offers",
+      "name": "Moments worth celebrating",
+      "tag": "CELEBRATIONS",
+      "text": "From intimate gatherings to your biggest days, make memories in nature.",
+      "images": [
+        "cottage/img-20231210-wa0078.jpg",
+        "cottage/img-20231210-wa0083.jpg",
+        "cottage/img-20231210-wa0064.jpg"
+      ],
+      "status": "published",
+      "order": 2,
+      "seo": {
+        "title": "Moments worth celebrating | Nature Nest",
+        "description": "From intimate gatherings to your biggest days, make memories in nature.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    }
+  ],
+  "galleries": [
+    {
+      "slug": "room",
+      "name": "Room",
+      "images": [
+        "banners/2024-08-24-2-1.jpg",
+        "banners/2024-08-24-1.jpg",
+        "banners/2024-08-24-1-1.jpg",
+        "banners/2023-04-24-1-1.jpg",
+        "banners/2023-04-24-1.jpg",
+        "banners/2022-08-02-1.jpg",
+        "banners/2022-10-17-1.jpg",
+        "banners/2022-08-02-1-1.jpg",
+        "banners/2022-08-02-2-1.jpg",
+        "banners/baneer2.jpg",
+        "banners/2024-08-24-2.jpg",
+        "banners/2024-08-24.jpg",
+        "banners/2023-04-24.jpg",
+        "banners/2022-08-02.jpg",
+        "banners/2022-10-17.jpg",
+        "banners/2022-08-02-2.jpg"
+      ],
+      "id": "room",
+      "status": "published",
+      "order": 0,
+      "description": "Room at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Room | Nature Nest Gallery",
+        "description": "Explore room at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-16",
+      "name": "Villa 16",
+      "images": [
+        "cottage/1l2a1513.JPG",
+        "cottage/1l2a1512.JPG",
+        "cottage/1l2a1515.JPG",
+        "cottage/1l2a1518.JPG",
+        "cottage/1l2a1526.JPG",
+        "cottage/1l2a1523.JPG",
+        "cottage/1l2a1522.JPG",
+        "cottage/1l2a1521.JPG",
+        "cottage/1l2a1520.JPG",
+        "cottage/1l2a1519.JPG",
+        "cottage/1l2a1516.JPG",
+        "cottage/1l2a1525.JPG"
+      ],
+      "id": "villa-16",
+      "status": "published",
+      "order": 1,
+      "description": "Villa 16 at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Villa 16 | Nature Nest Gallery",
+        "description": "Explore villa 16 at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "hotel",
+      "name": "Hotel",
+      "images": [
+        "banners/2023-12-03-1.jpg",
+        "banners/2022-11-27-1.jpg",
+        "banners/2022-12-09-1.jpg"
+      ],
+      "id": "hotel",
+      "status": "published",
+      "order": 2,
+      "description": "Hotel at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Hotel | Nature Nest Gallery",
+        "description": "Explore hotel at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa",
+      "name": "Villa",
+      "images": [
+        "cottage/1l2a1558.JPG",
+        "cottage/1l2a1544.JPG",
+        "cottage/1l2a1542.JPG",
+        "cottage/1l2a1547.JPG",
+        "cottage/1l2a1545.JPG",
+        "cottage/1l2a1543.JPG",
+        "cottage/1l2a1548.JPG"
+      ],
+      "id": "villa",
+      "status": "published",
+      "order": 3,
+      "description": "Villa at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Villa | Nature Nest Gallery",
+        "description": "Explore villa at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "event-at-nature-nest",
+      "name": "Event At Nature Nest",
+      "images": [
+        "cottage/img-20231210-wa0078.jpg",
+        "cottage/img-20231210-wa0083.jpg",
+        "cottage/img-20231210-wa0064.jpg",
+        "cottage/img-20231210-wa0101.jpg",
+        "cottage/img-20231210-wa0040.jpg",
+        "cottage/20240628-175253.jpg",
+        "cottage/20231211-192001.jpg",
+        "cottage/img-20231210-wa0053.jpg",
+        "cottage/20240312-204815.jpg",
+        "cottage/img-20231210-wa0093.jpg",
+        "cottage/img-20231210-wa0096.jpg",
+        "cottage/img-20240524-wa0007.jpg"
+      ],
+      "id": "event-at-nature-nest",
+      "status": "published",
+      "order": 4,
+      "description": "Event At Nature Nest at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Event At Nature Nest | Nature Nest Gallery",
+        "description": "Explore event at nature nest at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-9",
+      "name": "Villa 9",
+      "images": [
+        "cottage/1l2a1491.JPG",
+        "cottage/1l2a1481.JPG",
+        "cottage/1l2a1489.JPG",
+        "cottage/1l2a1487.JPG",
+        "cottage/1l2a1488.JPG",
+        "cottage/1l2a1483.JPG",
+        "cottage/1l2a1474.JPG",
+        "cottage/1l2a1480.JPG",
+        "cottage/1l2a1479.JPG",
+        "cottage/1l2a1478.JPG",
+        "cottage/1l2a1475.JPG",
+        "cottage/1l2a1490.JPG"
+      ],
+      "id": "villa-9",
+      "status": "published",
+      "order": 5,
+      "description": "Villa 9 at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Villa 9 | Nature Nest Gallery",
+        "description": "Explore villa 9 at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-4",
+      "name": "Villa 4",
+      "images": [
+        "cottage/1l2a1550.JPG",
+        "cottage/1l2a1549.JPG",
+        "cottage/1l2a1552.JPG",
+        "cottage/1l2a1553.JPG",
+        "cottage/1l2a1554.JPG",
+        "cottage/1l2a1557.JPG",
+        "cottage/1l2a1551.JPG",
+        "cottage/1l2a1556.JPG",
+        "cottage/1l2a1555.JPG"
+      ],
+      "id": "villa-4",
+      "status": "published",
+      "order": 6,
+      "description": "Villa 4 at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Villa 4 | Nature Nest Gallery",
+        "description": "Explore villa 4 at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-15",
+      "name": "Villa 15",
+      "images": [
+        "cottage/1l2a1496.JPG",
+        "cottage/1l2a1493.JPG",
+        "cottage/1l2a1508.JPG",
+        "cottage/1l2a1506.JPG",
+        "cottage/1l2a1504.JPG",
+        "cottage/1l2a1503.JPG",
+        "cottage/1l2a1500.JPG",
+        "cottage/1l2a1505.JPG"
+      ],
+      "id": "villa-15",
+      "status": "published",
+      "order": 7,
+      "description": "Villa 15 at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Villa 15 | Nature Nest Gallery",
+        "description": "Explore villa 15 at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "restaurant",
+      "name": "Restaurant",
+      "images": [
+        "1l2a1582.JPG",
+        "1l2a1581.JPG",
+        "1l2a1580.JPG",
+        "1l2a1572.JPG",
+        "1l2a1570.JPG",
+        "1l2a1569.JPG",
+        "1l2a1579.JPG",
+        "1l2a1577.JPG",
+        "1l2a1574.JPG",
+        "1l2a1571.JPG"
+      ],
+      "id": "restaurant",
+      "status": "published",
+      "order": 8,
+      "description": "Restaurant at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Restaurant | Nature Nest Gallery",
+        "description": "Explore restaurant at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "villa-3",
+      "name": "Villa 3",
+      "images": [
+        "cottage/1l2a1568.JPG",
+        "cottage/1l2a1567.JPG",
+        "cottage/1l2a1565.JPG",
+        "cottage/1l2a1564.JPG",
+        "cottage/1l2a1563.JPG",
+        "cottage/1l2a1562.JPG",
+        "cottage/1l2a1561.JPG",
+        "cottage/1l2a1560.JPG",
+        "cottage/1l2a1566.JPG"
+      ],
+      "id": "villa-3",
+      "status": "published",
+      "order": 9,
+      "description": "Villa 3 at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Villa 3 | Nature Nest Gallery",
+        "description": "Explore villa 3 at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "slug": "hall",
+      "name": "Events & gatherings",
+      "images": [
+        "cottage/img-20231210-wa0078.jpg",
+        "cottage/img-20231210-wa0083.jpg",
+        "cottage/img-20231210-wa0064.jpg",
+        "cottage/img-20231210-wa0101.jpg",
+        "cottage/img-20231210-wa0040.jpg",
+        "cottage/20240628-175253.jpg"
+      ],
+      "id": "hall",
+      "status": "published",
+      "order": 10,
+      "description": "Events & gatherings at The Nature Nest Hotel & Resort.",
+      "seo": {
+        "title": "Events & gatherings | Nature Nest Gallery",
+        "description": "Explore events & gatherings at Nature Nest in Mhow, near Indore.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      }
+    }
+  ],
+  "posts": [
+    {
+      "id": "first-story",
+      "slug": "best-resort-near-indore-what-makes-a-resort-feel-like-an-escape",
+      "name": "What makes a resort feel like an escape?",
+      "summary": "A little inspiration for a slower, greener getaway near Indore.",
+      "body": "What Makes a Resort Feel Like a Break From Everyday Life?\n\nEveryday life has its own rhythm. Work, traffic, phone calls, responsibilities, deadlines and constant notifications can make even a normal week feel exhausting. That is why people often look for more than just a place to stay when they plan a getaway. They want somewhere that genuinely feels different.\n\nA good resort creates that difference through its surroundings, atmosphere, comfort and experiences. It gives guests an opportunity to slow down, spend quality time with their loved ones and enjoy a few hours or days without following the usual routine.\n\nFor travelers searching for a Resort Near Indore, the right destination can make a short getaway feel surprisingly refreshing.\n\nBest Resort Indore: What Makes a Place Feel Like a Real Escape?\n\nA resort becomes an escape when guests stop feeling connected to the rush of everyday life.\n\nIt could be the greenery outside the room, the sound of nature in the morning, an unhurried breakfast, an afternoon beside the swimming pool or simply sitting somewhere peaceful with family. These small experiences can change the way a stay feels.\n\nThe difference is not always about having the most facilities. It is about how those facilities, surroundings and hospitality come together to create a comfortable environment.\n\nThis is what travelers increasingly expect from a Best Resort Indore—not just accommodation, but a genuine change of pace.\n\nResort Near Mhow: When Location Becomes Part of the Experience\n\nA resort's location plays an important role in how quickly guests can disconnect from their regular surroundings.\n\nA destination close enough to reach without a tiring journey, yet far enough from the city's everyday atmosphere, can create the perfect balance. This is one reason a Resort Near Mhow can be an appealing choice for people from Indore looking for a quick escape.\n\nThe Nature Nest Hotel & Resorts is situated in Mhow near Indore and combines natural surroundings with modern comfort, giving guests an environment designed around relaxation and leisure.\n\nNature Changes the Mood of a Stay\n\nThere is a reason people feel calmer when they spend time around greenery and open spaces.\n\nNature gives the mind a chance to slow down. Instead of constantly moving from one task to another, guests can take their time. A morning surrounded by greenery feels different from a morning in a busy city. An evening outdoors can feel more peaceful than another evening spent indoors with a phone or television.\n\nFor a Resort in Indore, creating this connection with nature can make the overall experience more memorable.\n\nThe Nature Nest is designed around this idea, combining lush surroundings with comfortable accommodation and resort amenities.\n\nHotel Near Indore: Comfort Still Matters\n\nWhile the surroundings may encourage relaxation, comfort remains an important part of a successful getaway.\n\nGuests want a room where they can genuinely rest after spending time outdoors. Comfortable beds, air conditioning, breakfast, security, privacy and other practical amenities help make the stay convenient.\n\nThe best experiences happen when guests do not have to worry about small things and can simply enjoy their time away.\n\nFor people searching for a Hotel Near Indore, this balance between natural surroundings and modern comfort can make a resort stay much more appealing.\n\nResort for Family: Creating Time to Be Together\n\nA family getaway does not always require an elaborate itinerary.\n\nSometimes, the biggest benefit is simply having everyone in the same place without the usual distractions. Parents can spend time with their children, families can enjoy meals together and everyone can experience a change from the normal weekly routine.\n\nA good Resort for Family should therefore provide enough space and comfort for different generations to enjoy themselves at their own pace.\n\nThe Nature Nest welcomes families as well as couples, nature lovers and other travelers, with accommodation and leisure facilities designed to support different kinds of stays.\n\nResort for Couples: Privacy Makes a Difference\n\nFor couples, a resort escape can be an opportunity to reconnect.\n\nThe experience does not need to be extravagant. A peaceful room, a private space, a relaxed meal or an evening surrounded by nature can be enough to make the getaway meaningful.\n\nThe Nature Nest offers cottages and private villas designed with privacy, comfort and natural views in mind, making the environment suitable for couples looking for a relaxed retreat.\n\nThis is why choosing the right Resort for Couples is often about finding an atmosphere rather than simply comparing room features.\n\nResort Near Indore With Private Pool: Why Leisure Matters\n\nOne of the reasons people choose resorts instead of conventional hotels is the opportunity to enjoy leisure without leaving the property.\n\nA swimming pool, outdoor spaces, nature trails, dining and comfortable accommodation can allow guests to create their own pace for the day.\n\nFor someone searching for a Resort Near Indore With Private Pool, the attraction is often the idea of having relaxation and recreation available within the same destination.\n\nThe Nature Nest features a swimming pool along with cottages, private villas and nature-focused experiences, allowing guests to spend more time enjoying the resort itself.\n\nIndore Resorts: The Importance of Doing Less\n\nOne of the biggest misconceptions about a holiday is that every hour needs to be planned.\n\nSometimes, doing less is exactly what makes a resort stay worthwhile.\n\nSitting outdoors, enjoying a slow breakfast, taking a swim, talking with family or simply watching the surroundings can provide a kind of relaxation that an activity-packed schedule cannot.\n\nThis is where good Indore Resorts can offer something different from a regular city hotel. The destination itself becomes part of the experience.\n\nBest Resorts Near Indore: It's About How the Place Makes You Feel\n\nWhen people compare the Best Resorts Near Indore, they often look at rooms, food, facilities, location and pricing. All of these factors matter, but there is another question worth asking:\n\nHow does the place make you feel?\n\nDo you feel relaxed when you arrive? Do you want to spend more time outdoors? Can you enjoy your meal without rushing? Can your family or partner genuinely disconnect from the daily routine?\n\nThese emotional aspects often determine whether a stay becomes something guests remember or simply another hotel visit.\n\nResorts Near Indore Within 100 KM for a Meaningful Break\n\nFor many travelers, convenience is part of luxury.\n\nA destination that does not require a long journey can make spontaneous getaways much easier. This is why people often search for Resorts Near Indore Within 100 KM when planning a weekend, family outing or couple's escape.\n\nThe idea is simple: travel less, enjoy more.\n\nA nearby destination can provide the change of scenery people need without turning the journey itself into another tiring experience.\n\nIndore Resort With Swimming Pool and Nature Around You\n\nA resort experience becomes more complete when guests can enjoy both relaxation and recreation.\n\nA swimming pool can provide a refreshing break during the day, while natural surroundings create a calmer atmosphere outside the activity areas. Dining and comfortable accommodation then bring everything together.\n\nThe Nature Nest combines a swimming pool, dining, cottages, private villas and nature-oriented surroundings as part of its overall resort experience.\n\nThis combination allows guests to decide what their ideal day looks like instead of following a fixed schedule.\n\nThe Nature Nest: A Place to Step Away From the Routine\n\nThe Nature Nest Hotel & Resorts is designed around the idea of combining modern comfort with the peaceful character of nature. Located in Mhow near Indore, the resort offers cottages, private villas, swimming pool facilities, dining and a setting surrounded by greenery.\n\nWhether the purpose is a family weekend, a couple's getaway or simply a few quiet days away from the city, the experience is centered around giving guests a chance to slow down.\n\nThat is what makes a resort feel different from everyday life—not one particular feature, but the way the entire environment encourages you to pause.\n\nConclusion\n\nA true resort escape is not necessarily about luxury in its most extravagant form. It is about creating enough distance from everyday life to breathe, reconnect and enjoy the present moment.\n\nThe right surroundings can make a simple breakfast feel special. A peaceful room can make rest more meaningful. A swimming pool can turn an ordinary afternoon into leisure. And a few hours with family or a partner can become a memory worth keeping.\n\nFor travelers looking for a Resort Near Indore, Resort Near Mhow, Best Resort in Mhow, Resort for Couples or Resort for Family, the real question should not only be what the property offers, but how the experience makes them feel.\n\nAt The Nature Nest Hotel & Resorts, the combination of nature, comfort and thoughtful resort experiences is designed to help guests step away from the ordinary and enjoy a stay that feels genuinely refreshing.\n\nBecause sometimes, the best break from everyday life is simply finding a place where you don't feel the need to rush.",
+      "images": [
+        "banners/2024-08-24-1-1.jpg",
+        "banners/2023-04-24-1.jpg",
+        "banners/2022-10-17-1.jpg"
+      ],
+      "date": "2026-10-07",
+      "status": "published",
+      "order": 0,
+      "seo": {
+        "title": "What Makes a Resort Feel Like an Escape? | Nature Nest",
+        "description": "Discover the little details that make a green getaway near Indore feel like a true escape.",
+        "keywords": [],
+        "image": "enhanced/story/story-arrival-v1.webp",
+        "noindex": false
+      },
+      "category": "Slow travel",
+      "featured": true
+    },
+    {
+      "id": "a-slow-weekend",
+      "slug": "slow-weekend-getaway-mhow-near-indore",
+      "name": "A weekend with a little less on the agenda.",
+      "category": "Slow travel",
+      "summary": "Leave a little room in your plans. The best part of a getaway might be the time you haven’t filled.",
+      "images": [
+        "enhanced/story/story-unwind-v1.webp",
+        "enhanced/pool-regenerated-v1.webp"
+      ],
+      "body": "There is a particular kind of pleasure in arriving somewhere with no long list of things to do. A bag put down. A phone put away. An afternoon that belongs to you.\n\nA weekend in Mhow can begin with that feeling. Instead of trying to fit a whole holiday into a short stay, start with a smaller ambition: a change of surroundings and time to enjoy it.\n\n## Arrive with room to breathe\nGive yourself time to settle in before planning the next thing. Take a look around your accommodation, find a comfortable spot and let the journey end properly. Ask the team about the arrangements for your visit, then give the rest of the afternoon a little space.\n\nThere is no need to turn arrival into an itinerary. A conversation, a view of the garden and a quiet pause can be enough to mark the start of your break.\n\n## Make one plan, then leave a little space\nChoose one thing everyone looks forward to. It might be time by the pool, a shared meal or an unhurried walk around the resort. Confirm current access and timings with the team, especially if you are visiting with children or arranging a group stay.\n\nOnce that part is settled, resist filling every gap. The moments between plans are often where a weekend begins to feel like your own.\n\n## Let the morning be different\nTry a slower start than the one you have at home. Open the curtains, step out when you are ready and spend a few minutes without a screen. If breakfast is part of your plans, check your booking inclusions and enjoy it without watching the clock.\n\nA good morning does not need to be elaborate. It just needs a little attention.\n\n## Take the feeling home\nBefore you leave, think of one small part of the weekend you could keep: a meal without phones, a few minutes outdoors or an evening without another appointment.\n\nThe Nature Nest is a place to begin that pause. Browse the cottages and private villas, share your preferred dates with our team and let us help you plan the details.",
+      "featured": false,
+      "date": "2026-10-14",
+      "status": "published",
+      "order": 1,
+      "seo": {
+        "title": "A weekend with a little less on the agenda | Nature Nest",
+        "description": "Leave a little room in your plans. The best part of a getaway might be the time you haven’t filled.",
+        "keywords": [
+          "slow travel",
+          "Nature Nest Mhow"
+        ],
+        "image": "enhanced/story/story-unwind-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "cottage-or-villa",
+      "slug": "cottage-or-private-villa-choose-your-stay-mhow",
+      "name": "A cottage or a villa? Find your kind of stay.",
+      "category": "Stay stories",
+      "summary": "A quiet corner for two or more room for your favourite people—start with the way you want to spend your time.",
+      "images": [
+        "enhanced/cottages-regenerated-v1.webp",
+        "enhanced/story/story-arrival-v1.webp"
+      ],
+      "body": "Choosing where to stay becomes easier when you picture an ordinary moment from your trip. Your first cup of the day. A conversation after dinner. The place everyone gathers before heading out.\n\nThe right accommodation is the one that makes those moments feel comfortable. At The Nature Nest, our cottages and private villas give you different options to explore. Here are a few questions to help you choose.\n\n## Start with your people\nConsider who is travelling and how they like to spend their time. A couple may want a cosy place to retreat to. A family or group may care more about the room arrangement and space to spend time together.\n\nAsk the team to confirm the permitted occupancy, bed arrangements and any extra-guest requirements for the specific accommodation. The name of a room alone does not tell you everything about how it will suit your group.\n\n## Think about the in-between moments\nA stay is more than the hours you spend sleeping. If you enjoy a quiet morning or time outdoors, look closely at the listed photographs and descriptions, then ask about the exact layout and outdoor space available with your choice.\n\nIf a particular view, accessibility feature or private facility matters to you, have the team confirm it before booking. Features can differ between individual cottages and villas.\n\n## Look beyond the starting rate\nA starting price is a useful place to begin a conversation. For your dates, confirm the total price, taxes, meals, additional guests and any other inclusions. It is also a good moment to ask about payment and cancellation conditions.\n\nKeeping these details clear makes it easier to relax when you arrive.\n\n## Choose the feeling you want\nYou do not need to find the most elaborate option. Choose somewhere that fits the pace of your visit: a little privacy, time together, or a comfortable base for a weekend surrounded by green.\n\nExplore our stay collection and send an enquiry for the accommodation that catches your eye. Tell us who is coming and what matters to you, and our team can help you find a suitable option.",
+      "featured": false,
+      "date": "2026-10-14",
+      "status": "published",
+      "order": 2,
+      "seo": {
+        "title": "A cottage or a villa? Find your kind of stay | Nature Nest",
+        "description": "A quiet corner for two or more room for your favourite people—start with the way you want to spend your time.",
+        "keywords": [
+          "stay stories",
+          "Nature Nest Mhow"
+        ],
+        "image": "enhanced/cottages-regenerated-v1.webp",
+        "noindex": false
+      }
+    },
+    {
+      "id": "a-table-and-time",
+      "slug": "shared-meals-quiet-evenings-nature-nest",
+      "name": "A good evening starts with a little time together.",
+      "category": "Food & moments",
+      "summary": "A shared table, an easy conversation and no reason to rush. Make space for the simplest part of your getaway.",
+      "images": [
+        "enhanced/story/story-belong-v1.webp",
+        "banner1/1l2a1574.jpg"
+      ],
+      "body": "Some of the best memories of a trip happen after the day's plans are finished. Everyone settles around a table, the conversation wanders and nobody is hurrying to be somewhere else.\n\nAn evening at The Nature Nest can be a chance to make time for exactly that. You bring your favourite people; begin by talking to the team about the arrangements for your visit.\n\n## Start with the conversation\nFor a family meal, a couple's getaway or a gathering with friends, let the team know what you have in mind. Share the date, group size and any food preferences when you enquire.\n\nAsk about current dining options, service times and booking requirements. If an allergy or dietary need is important to your visit, discuss it directly with the team before confirming your plans.\n\n## Keep the occasion personal\nAn enjoyable evening does not always need decorations or a packed programme. It might be a long-overdue catch-up, a small celebration or simply the pleasure of eating together without interruptions.\n\nFor something more specific, such as a birthday or a group gathering, ask what the resort can arrange and confirm any additional costs. A little clarity beforehand leaves more room to enjoy the occasion itself.\n\n## Leave a little space after the meal\nIf the weather and the resort's current arrangements allow, take your time before heading back to your room. A quiet conversation and a moment outdoors can be a lovely way to let an evening finish.\n\nBe considerate of other guests and follow the team's guidance for shared spaces. A relaxed atmosphere is something everyone helps create.\n\n## Make time for your people\nA meal is often just the reason to bring everyone together. The part you remember is the company, the conversation and how it felt to pause for a while.\n\nIf you are planning a visit, send our team a note with your dates and the occasion. We can discuss the options and help you understand what is available for your stay.",
+      "featured": false,
+      "date": "2026-10-14",
+      "status": "published",
+      "order": 3,
+      "seo": {
+        "title": "A good evening starts with a little time together | Nature Nest",
+        "description": "A shared table, an easy conversation and no reason to rush. Make space for the simplest part of your getaway.",
+        "keywords": [
+          "food & moments",
+          "Nature Nest Mhow"
+        ],
+        "image": "enhanced/story/story-belong-v1.webp",
+        "noindex": false
+      }
+    }
+  ],
+  "heroSlides": [
+    {
+      "image": "enhanced/story/story-belong-v1.webp",
+      "alt": "Warmly illuminated garden walkway at The Nature Nest in the evening",
+      "eyebrow": "THE NATURE NEST · MHOW, INDORE",
+      "title": "Where life",
+      "accent": "slows down.",
+      "description": "A little wilderness. A little indulgence. A beautiful place to come back to yourself.",
+      "caption": "Evenings you wish would last a little longer."
+    },
+    {
+      "image": "enhanced/story/story-arrival-v1.webp",
+      "alt": "Lush garden path leading to The Nature Nest resort",
+      "eyebrow": "PRIVATE VILLAS · PEACEFUL COTTAGES",
+      "title": "A little luxury.",
+      "accent": "A lot of nature.",
+      "description": "Wake up to green views, quiet corners, and a day that is entirely your own.",
+      "caption": "A quieter world, just outside the city."
+    },
+    {
+      "image": "banners/banner-pool-1.jpg",
+      "alt": "Blue swimming pool surrounded by trees at the resort",
+      "eyebrow": "SWITCH OFF · SLOW DOWN · SETTLE IN",
+      "title": "Slow mornings.",
+      "accent": "Lasting memories.",
+      "description": "A dip in the pool. Time with your people. The simple pleasure of being here.",
+      "caption": "A little sunshine. A lot of doing nothing."
+    }
+  ],
+  "storyChapters": [
+    {
+      "name": "Arrive",
+      "title": "A little closer to nature.",
+      "image": "enhanced/story/story-arrival-v1.webp",
+      "detail": "Green views. A warm welcome."
+    },
+    {
+      "name": "Unwind",
+      "title": "Take the scenic way to nowhere.",
+      "image": "enhanced/story/story-unwind-v1.webp",
+      "detail": "Quiet paths. Unhurried afternoons."
+    },
+    {
+      "name": "Belong",
+      "title": "Good company. Golden evenings.",
+      "image": "enhanced/story/story-belong-v1.webp",
+      "detail": "A table for your favourite people."
+    }
+  ],
+  "roomsHero": [
+    {
+      "image": "enhanced/cottages-regenerated-v1.webp",
+      "title": "The cottage collection",
+      "note": "Cosy spaces. Green mornings.",
+      "href": "/rooms/luxury-left-cottage"
+    },
+    {
+      "image": "places/farm-1-new-pdf-page-0003.jpg",
+      "title": "Your own private retreat",
+      "note": "A little space, entirely yours.",
+      "href": "/rooms/private-villa-1"
+    },
+    {
+      "image": "cottage/1l2a1491-1.JPG",
+      "title": "Room to make memories",
+      "note": "Slow down. Stay a little longer.",
+      "href": "/rooms/villa-9"
+    }
+  ],
+  "homePhotos": {
+    "homeResortPhotos": [
+      "enhanced/story/story-arrival-v1.webp",
+      "enhanced/story/story-unwind-v1.webp",
+      "enhanced/story/story-belong-v1.webp"
+    ],
+    "homeGardenPhotos": [
+      "enhanced/story/story-unwind-v1.webp",
+      "enhanced/geese-regenerated-v1.webp",
+      "banners/2022-10-17-1.jpg"
+    ],
+    "homeLeisurePhotos": [
+      "enhanced/pool-regenerated-v1.webp",
+      "banners/2024-08-24-2-1.jpg",
+      "enhanced/story/story-unwind-v1.webp"
+    ],
+    "homeDiningPhotos": [
+      "banner1/1l2a1574.jpg",
+      "enhanced/story/story-belong-v1.webp",
+      "banners/2023-04-24-1-1.jpg"
+    ],
+    "homeEventPhotos": [
+      "cottage/img-20231210-wa0078.jpg",
+      "cottage/img-20231210-wa0083.jpg",
+      "cottage/img-20231210-wa0064.jpg"
+    ],
+    "homeEveningPhotos": [
+      "enhanced/story/story-belong-v1.webp",
+      "enhanced/closing-garden-banner-v1.webp",
+      "1l2a1582.JPG"
+    ],
+    "homeCottageViews": [
+      "enhanced/cottages-regenerated-v1.webp",
+      "enhanced/story/story-unwind-v1.webp",
+      "banners/2022-10-17-1.jpg"
+    ],
+    "homeClosingPhotos": [
+      "enhanced/closing-garden-banner-v1.webp",
+      "enhanced/story/story-arrival-v1.webp",
+      "enhanced/story/story-belong-v1.webp"
+    ],
+    "homeExperiencePhotos": {
+      "wellness-spa": [
+        "enhanced/pool-regenerated-v1.webp",
+        "banners/2024-08-24-2-1.jpg",
+        "enhanced/story/story-unwind-v1.webp"
+      ],
+      "restaurants-bars": [
+        "banner1/1l2a1574.jpg",
+        "enhanced/story/story-belong-v1.webp",
+        "banners/2023-04-24-1-1.jpg"
+      ],
+      "special-offers": [
+        "cottage/img-20231210-wa0078.jpg",
+        "cottage/img-20231210-wa0083.jpg",
+        "cottage/img-20231210-wa0064.jpg"
+      ]
+    },
+    "homeStayPhotos": {
+      "luxury-left-cottage": [
+        "enhanced/cottages-regenerated-v1.webp",
+        "cottage/9.png",
+        "cottage/4.png"
+      ],
+      "private-villa-1": [
+        "places/farm-1-new-pdf-page-0003.jpg",
+        "places/farm-1-new-pdf-page-0007.jpg",
+        "places/farm-1-new-pdf-page-0009.jpg"
+      ],
+      "villa-9": [
+        "cottage/1l2a1491.JPG",
+        "cottage/1l2a1489.JPG",
+        "cottage/1l2a1483.JPG"
+      ],
+      "luxury-middle-cottage": [
+        "cottage/2.png",
+        "cottage/10.png",
+        "cottage/9.png"
+      ]
+    },
+    "guestPortrait": [
+      "testimonials/unnamed-2.png"
+    ]
+  },
+  "photos": {
+    "resortPhotos": [
+      "banner1/baneer2-transformed-min.jpeg",
+      "banner1/1.png",
+      "banner1/1l2a1581.jpg"
+    ],
+    "gardenPhotos": [
+      "banners/2024-08-24-1-1.jpg",
+      "banners/2023-04-24-1.jpg",
+      "banners/2022-10-17-1.jpg"
+    ],
+    "diningPhotos": [
+      "banner1/1l2a1574.jpg",
+      "1l2a1580.JPG",
+      "1l2a1582.JPG"
+    ],
+    "leisurePhotos": [
+      "banners/banner-pool-1.jpg",
+      "banners/2024-08-24-2-1.jpg",
+      "banners/2022-10-17-1.jpg"
+    ],
+    "eventPhotos": [
+      "banners/2023-12-03-1.jpg",
+      "cottage/img-20231210-wa0078.jpg",
+      "cottage/img-20231210-wa0083.jpg",
+      "cottage/img-20231210-wa0064.jpg"
+    ],
+    "eveningPhotos": [
+      "banner1/1l2a1581.jpg",
+      "1l2a1570.JPG",
+      "1l2a1582.JPG"
+    ],
+    "experiencePhotos": {
+      "wellness-spa": [
+        "banners/banner-pool-1.jpg",
+        "banners/2024-08-24-2-1.jpg",
+        "banners/2022-10-17-1.jpg"
+      ],
+      "restaurants-bars": [
+        "banner1/1l2a1574.jpg",
+        "1l2a1580.JPG",
+        "1l2a1582.JPG"
+      ],
+      "special-offers": [
+        "banners/2023-12-03-1.jpg",
+        "cottage/img-20231210-wa0078.jpg",
+        "cottage/img-20231210-wa0083.jpg",
+        "cottage/img-20231210-wa0064.jpg"
+      ]
+    },
+    "cottagePhotos": [
+      "cottage/1-850x460.png",
+      "cottage/9-850x460.png",
+      "cottage/4-850x460.png",
+      "cottage/10-850x460.png"
+    ]
+  },
+  "comforts": [
+    {
+      "kind": "stay",
+      "title": "Your own hideaway",
+      "text": "Cottages & private villas",
+      "to": "/rooms"
+    },
+    {
+      "kind": "leaf",
+      "title": "A little closer to nature",
+      "text": "Green views. Quieter days.",
+      "to": "/about"
+    },
+    {
+      "kind": "pool",
+      "title": "Into the blue",
+      "text": "Poolside moments & leisure",
+      "to": "/services/wellness-spa"
+    },
+    {
+      "kind": "dining",
+      "title": "Made to be savoured",
+      "text": "Warm meals. Good company.",
+      "to": "/services/restaurants-bars"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where is The Nature Nest?",
+      "answer": "We are in Mhow, near Indore. Find our full address and directions in the contact section."
+    },
+    {
+      "question": "What kind of stays can I choose from?",
+      "answer": "Explore our cottages and private villas. Each listing includes photos, amenities and an indicative nightly rate."
+    },
+    {
+      "question": "How do I book a stay?",
+      "answer": "Send a reservation enquiry with your dates and guest details. Our team will confirm availability and the final rate."
+    },
+    {
+      "question": "Can I plan a celebration or a group visit?",
+      "answer": "Contact our team with your preferred date and group size to discuss a celebration or gathering."
+    }
+  ],
+  "copy": {
+    "main.001": "A NEW PATH",
+    "main.002": "Let's get you back to nature.",
+    "main.003": "Back home",
+    "main.004": "THIS IS THE NATURE NEST",
+    "main.005": "Not far away.",
+    "main.006": "A world apart.",
+    "main.007": "01 — THE FEELING",
+    "main.008": "Somewhere between the city and the silence, there’s a place that feels like a deep breath.",
+    "main.009": "Welcome to The Nature Nest. Tucked into the greenery of Mhow, our cottages and private villas give you the space to reconnect—with nature, with your people, with yourself.",
+    "main.010": "A place to call your own.",
+    "main.011": "Less rush.",
+    "main.012": "More ",
+    "main.013": "real life.",
+    "main.014": "NATURE DOES THE REST.",
+    "main.015": "STAY A LITTLE LONGER",
+    "main.016": "Your kind of ",
+    "main.017": "hideaway.",
+    "main.018": "Discover all ",
+    "main.019": " stays ",
+    "main.020": "FROM ",
+    "main.021": " / NIGHT",
+    "main.022": " Personal attention. Thoughtful comforts. Always.",
+    "main.023": "COTTAGES & PRIVATE VILLAS",
+    "main.024": "HOW WILL YOU SPEND YOUR DAY?",
+    "main.025": "Absolutely everything.",
+    "main.026": "Or ",
+    "main.027": "nothing at all.",
+    "main.028": "No packed itineraries. No keeping up.",
+    "main.029": "Just the things that make you feel good.",
+    "main.030": "SWITCH OFF. SETTLE IN.",
+    "main.031": "Collect moments.",
+    "main.032": "Not notifications.",
+    "main.033": "Make time for you ",
+    "main.034": " THE NATURE NEST · MHOW",
+    "main.035": "GOOD PLACES. HAPPY PEOPLE.",
+    "main.036": "The feeling",
+    "main.037": "stays with you.",
+    "main.038": "FROM OUR GUEST BOOK",
+    "main.039": "The room was spacious and elegantly decorated, with a comfortable bed and modern amenities. I enjoyed the private balcony with breathtaking views.",
+    "main.040": "Mohit Seth",
+    "main.041": "A Nature Nest guest",
+    "main.042": "POSTCARDS FROM THE NEST",
+    "main.043": "Wish you were ",
+    "main.044": "here.",
+    "main.045": "See the whole picture ",
+    "main.046": "Your escape",
+    "main.047": "starts here.",
+    "main.048": "CHECK IN",
+    "main.049": "CHECK OUT",
+    "main.050": "GUESTS",
+    "main.051": "Enquire about a stay ",
+    "main.052": "THE NATURE NEST · MHOW",
+    "main.053": "← All stays",
+    "main.054": "YOUR OWN LITTLE SANCTUARY",
+    "main.055": "From ",
+    "main.056": " / night",
+    "main.057": "Make yourself ",
+    "main.058": "at home.",
+    "main.059": "The little comforts",
+    "main.060": "Green surroundings",
+    "main.061": "Pool & leisure",
+    "main.062": "Resort dining",
+    "main.063": "A LITTLE TIME FOR YOU",
+    "main.064": "Your escape awaits.",
+    "main.065": "Tell us your dates. Our team will help you plan the rest.",
+    "main.066": "Enquire about this stay ",
+    "main.067": "Rates and availability confirmed by our team.",
+    "main.068": "Thoughtful experiences, at nature’s pace.",
+    "main.069": " Discover warm hospitality and a setting that brings you closer to the people you love.",
+    "main.070": "Plan your visit",
+    "main.071": "A thousand little",
+    "main.072": "reasons to stay.",
+    "main.073": "Real places. Real moments. A glimpse into life at The Nature Nest.",
+    "main.074": "View all galleries →",
+    "main.075": "Rooted in nature.",
+    "main.076": "Made for you.",
+    "main.077": "A warm welcome, a quieter rhythm, and space to reconnect.",
+    "main.078": "Let's plan something",
+    "main.079": "beautiful.",
+    "main.080": "A weekend away, a celebration, or simply a little time for you.",
+    "main.081": "WE’D LOVE TO HEAR FROM YOU",
+    "main.082": "Your escape.",
+    "main.083": "Our pleasure.",
+    "main.084": "Get directions ",
+    "main.085": "A little hello goes a long way.",
+    "main.086": "Your name",
+    "main.087": "Email address",
+    "main.088": "Phone number",
+    "main.089": "What do you have in mind?",
+    "main.090": "Our resort team will reply using your contact details.",
+    "main.091": "Stories from",
+    "main.092": "the nest.",
+    "main.093": "Inspiration for your next unhurried escape.",
+    "main.094": "THE JOURNAL · ",
+    "main.095": "Explore your next stay",
+    "main.096": " · THE JOURNAL",
+    "main.097": "Read the story ",
+    "main.098": "Page not found.",
+    "main.099": "Back home",
+    "main.100": "GUEST ASSISTANCE",
+    "main.101": "We're here to ",
+    "main.102": "help.",
+    "main.103": "Online account services require the resort’s booking system.",
+    "main.104": "Please contact our team for reservations or help with an existing booking.",
+    "main.105": "Contact the resort",
+    "main.106": "LET’S MAKE TIME FOR YOU",
+    "main.107": "Your next ",
+    "main.108": "escape.",
+    "main.109": "Share your plans with our team. We’ll confirm availability and the best rate for your stay.",
+    "main.110": "Your name",
+    "main.111": "Phone number",
+    "main.112": "Your stay",
+    "main.113": "Help me choose",
+    "main.114": "Check in",
+    "main.115": "Check out",
+    "main.116": "Guests",
+    "main.117": " You can also contact us directly.",
+    "main.118": "Continue on WhatsApp →",
+    "main.119": "This is an enquiry, not a confirmed reservation. No payment is collected.",
+    "Hero.001": "Find your escape ",
+    "Hero.002": "Explore the resort ",
+    "Hero.003": "SCROLL TO UNWIND ",
+    "OurStory.001": " MHOW, NEAR INDORE",
+    "OurStory.002": " OUR STORY",
+    "OurStory.003": "The luxury of",
+    "OurStory.004": "slowing down.",
+    "OurStory.005": "A little wilderness.",
+    "OurStory.006": "A little more room to just be.",
+    "OurStory.007": "At The Nature Nest Hotel & Resort in Mhow, near Indore, green surroundings meet thoughtful comforts. A place to put your bags down, take a breath, and feel a little more like yourself.",
+    "OurStory.008": "Cosy cottages. Private villas. Shared meals and peaceful afternoons by the pool. Here, life’s simplest pleasures set the pace.",
+    "OurStory.009": "Find your space ",
+    "OurStory.010": "Explore the nest ",
+    "OurStory.011": "Less rush. More real life.",
+    "OurStory.012": "THAT’S THE NATURE NEST WAY.",
+    "Header.001": " MHOW, INDORE ",
+    "Header.002": "YOUR OWN LITTLE ESCAPE",
+    "Header.003": " A LITTLE CLOSER TO NATURE",
+    "Header.004": "Book your escape",
+    "Header.005": "A little time for yourself.",
+    "Header.006": "LET’S PLAN YOUR STAY",
+    "Header.007": "Book your escape",
+    "Header.008": "Book a stay",
+    "Footer.001": "A personal answer is always a call away.",
+    "Footer.002": "STAY IN THE KNOW",
+    "Footer.003": "A little note from ",
+    "Footer.004": "the nest.",
+    "Footer.005": "Subscribe to our newsletter for resort news and inspiration for your next escape.",
+    "Footer.006": "Your email address",
+    "Footer.007": "By subscribing, you request resort news and updates.",
+    "Footer.008": " YOUR LITTLE CORNER OF MHOW, INDORE",
+    "Footer.009": "Come for the quiet. Stay for ",
+    "Footer.010": "the feeling.",
+    "Footer.011": "Green surroundings. Warm welcomes.",
+    "Footer.012": "A little time that’s entirely yours.",
+    "Footer.013": "Book your escape",
+    "Footer.014": "GIVE US A CALL",
+    "Footer.015": "DROP US A NOTE",
+    "Footer.016": "FIND YOUR WAY HERE",
+    "Footer.017": "Get directions ",
+    "Footer.018": "Our links",
+    "Footer.019": "Here to help",
+    "Footer.020": "FAQ",
+    "Footer.021": "Guest support",
+    "Footer.022": "Privacy",
+    "Footer.023": "Terms & conditions",
+    "Footer.024": "FOLLOW THE LITTLE MOMENTS",
+    "Footer.025": " All rights reserved.",
+    "Footer.026": "ROOTED IN NATURE. REMEMBERED WITH LOVE.",
+    "Footer.027": "Back to top",
+    "RoomsPage.001": " STAY A LITTLE CLOSER TO NATURE",
+    "RoomsPage.002": "Find your kind",
+    "RoomsPage.003": "of ",
+    "RoomsPage.004": "quiet.",
+    "RoomsPage.005": "Cosy cottages. Private villas. A slower way to stay.",
+    "RoomsPage.006": "Your little corner of Mhow is waiting.",
+    "RoomsPage.007": "Explore our stays ",
+    "RoomsPage.008": "MHOW, NEAR INDORE",
+    "RoomsPage.009": " stays. One beautiful escape.",
+    "RoomsPage.010": "Green surroundings",
+    "RoomsPage.011": "STAYS FROM",
+    "RoomsPage.012": "/ night",
+    "RoomsPage.013": "View stay ",
+    "RoomsPage.014": "Enquire ",
+    "RoomsPage.015": " A few dates. A little daydreaming. Let’s find your stay.",
+    "RoomsPage.016": " SPACES TO CALL YOUR OWN",
+    "RoomsPage.017": "Check in.",
+    "RoomsPage.018": "Feel a world away.",
+    "RoomsPage.019": " cosy cottages. ",
+    "RoomsPage.020": " private villas.",
+    "RoomsPage.021": "Each with its own character, all with that",
+    "RoomsPage.022": " unmistakable Nature Nest feeling.",
+    "RoomsPage.023": "Sort stays",
+    "RoomsPage.024": "Collection order",
+    "RoomsPage.025": "Price: low to high",
+    "RoomsPage.026": "Price: high to low",
+    "RoomsPage.027": "YOUR STAY, YOUR PACE",
+    "RoomsPage.028": "Prices shown are starting nightly rates. Our team will confirm the final rate and availability for your dates.",
+    "RoomsPage.029": " THE LITTLE THINGS, BEAUTIFULLY DONE",
+    "RoomsPage.030": "More than a room.",
+    "RoomsPage.031": "A feeling.",
+    "RoomsPage.032": "Good days start with a little escape.",
+    "RoomsPage.033": " A LITTLE HELP FROM YOUR HOSTS",
+    "RoomsPage.034": "Your perfect stay?",
+    "RoomsPage.035": "Let’s find it together.",
+    "RoomsPage.036": "A quiet weekend for two or time with your favourite people. Tell us what you have in mind—we’ll help you choose your corner of the nest.",
+    "RoomsPage.037": "Help me choose ",
+    "ClosingBanner.001": "YOU’VE EARNED A LITTLE ESCAPE.",
+    "ClosingBanner.002": "See you at ",
+    "ClosingBanner.003": "the nest.",
+    "ClosingBanner.004": "Bring your favourite people.",
+    "ClosingBanner.005": " We’ll take care of the rest.",
+    "ClosingBanner.006": "Plan your stay",
+    "ClosingBanner.007": " MHOW, INDORE ",
+    "ClosingBanner.008": " THE NATURE NEST",
+    "Brand3D.001": "THE",
+    "Brand3D.002": "HOTEL & RESORT",
+    "guest.formPrivacy": "We use your details to respond to this enquiry. Please avoid sharing sensitive personal or payment information.",
+    "guest.privacyLink": "Privacy policy",
+    "guest.termsLink": "Booking terms",
+    "guest.cancellationLink": "Cancellation & refunds",
+    "guest.contactEyebrow": "A PERSONAL ANSWER",
+    "guest.contactHeading": "We’re here to help.",
+    "guest.contactIntro": "A new escape, a change of plans or a question about your information. Talk to our resort team.",
+    "guest.directions": "Get directions",
+    "guest.helpEyebrow": "GOOD TO KNOW",
+    "guest.helpHeading": "A little help with the details.",
+    "guest.helpIntro": "For an existing booking, include your visit dates and booking reference. Our team will help you with the next step.",
+    "guest.whatsapp": "Chat on WhatsApp",
+    "guest.home": "Home",
+    "guest.pageEyebrow": "THE NATURE NEST · GUEST INFORMATION",
+    "guest.updated": "Updated",
+    "guest.onPage": "ON THIS PAGE",
+    "guest.faq": "Frequently asked questions",
+    "guest.contactLink": "Contact our team",
+    "guest.related": "A LITTLE MORE CLARITY",
+    "guest.unsubscribe": "Unsubscribe by email",
+    "journal.defaultCategory": "From the nest",
+    "journal.readTime": "min read",
+    "journal.readStory": "Read the story",
+    "journal.invitationImage": "A quiet escape at The Nature Nest",
+    "journal.invitationEyebrow": "MAKE A LITTLE TIME FOR YOU",
+    "journal.invitationTitle": "Your next story",
+    "journal.invitationAccent": "starts here.",
+    "journal.exploreStays": "Find your kind of stay",
+    "journal.eyebrow": "THE NATURE NEST JOURNAL",
+    "journal.edition": "NOTES FROM MHOW, INDORE",
+    "journal.heading": "Stories for a",
+    "journal.accent": "slower kind of life.",
+    "journal.subtitle": "Little discoveries, thoughtful stays and moments worth making time for. A few pages from life at The Nature Nest.",
+    "journal.browse": "Take a little look around",
+    "journal.featured": "THE FEATURED STORY",
+    "journal.featuredNote": "A little closer to the things that matter.",
+    "journal.featuredSignature": "LESS RUSH. MORE REAL LIFE.",
+    "journal.latestEyebrow": "WORTH A LITTLE OF YOUR TIME",
+    "journal.latestTitle": "More from ",
+    "journal.latestAccent": "the nest.",
+    "journal.searchPlaceholder": "Find a little inspiration",
+    "journal.allStories": "All stories",
+    "journal.storySingular": "story",
+    "journal.storyPlural": "stories",
+    "journal.noResults": "A different path, perhaps?",
+    "journal.moreSoon": "More stories are on their way.",
+    "journal.noResultsHelp": "Try another word or explore all of our stories.",
+    "journal.moreSoonHelp": "There’s always something to look forward to at the nest.",
+    "journal.reset": "Reset filters",
+    "journal.copied": "Link copied",
+    "journal.copyFallback": "You can copy this page’s address from your browser.",
+    "journal.back": "Back to the journal",
+    "journal.copyLink": "Copy link",
+    "journal.readingNote": "TAKE YOUR TIME",
+    "journal.stayNoteTitle": "Read it. Feel it. Live it.",
+    "journal.stayNoteCopy": "Make a little space for a getaway of your own.",
+    "journal.stayNoteLink": "Explore our stays",
+    "journal.endNote": "A LITTLE CLOSER TO NATURE. A LITTLE CLOSER TO YOU.",
+    "journal.allBack": "Explore all stories",
+    "journal.relatedEyebrow": "STAY A LITTLE LONGER",
+    "journal.relatedTitle": "One story leads to ",
+    "journal.relatedAccent": "another.",
+    "journal.missing": "This story is taking a little break."
+  }
+}
