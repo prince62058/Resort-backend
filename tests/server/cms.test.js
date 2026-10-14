@@ -16,6 +16,18 @@ test('published content filters drafts and resolves edited slugs consistently',(
  const c=structuredClone(seed);c.pages.find(p=>p.template==='rooms').slug='luxury-stays';c.rooms[0].slug='green-villa';c.rooms[1].status='draft';
  const pub=publicContent(c);assert.equal(pub.rooms.length,11);assert.equal(linkTo(pub,'/rooms/'+c.rooms[0].id),'/luxury-stays/green-villa');assert.equal(resolveRoute(pub,'/luxury-stays/green-villa').item.id,c.rooms[0].id);
 });
+test('social links accept profile URLs or blanks, reject unsafe URLs and support older content',()=>{
+ const old=structuredClone(seed);delete old.settings.youtube;
+ assert.equal(parseContent(old).settings.youtube,'');
+ for(const key of ['instagram','facebook','linkedin','youtube']) {
+  const c=structuredClone(seed);c.settings[key]='https://example.test/resort';
+  assert.equal(parseContent(c).settings[key],c.settings[key]);
+  c.settings[key]='';assert.equal(parseContent(c).settings[key],'');
+  for(const value of ['javascript:alert(1)','data:text/html,unsafe','https://user:password@example.test','not a URL']) {
+   c.settings[key]=value;assert.throws(()=>parseContent(c),e=>e.status===400);
+  }
+ }
+});
 test('server SEO escapes scripts and produces canonical metadata and noindex on 404',()=>{
  const c=publicContent(seed);c.settings.siteUrl='https://example.com';c.pages[0].seo.title='A <script>alert(1)</script> retreat';const seo=seoFor(c,'/','http://localhost:5174');assert.equal(seo.canonical,'https://example.com/');assert.doesNotMatch(seoHead(seo),/<script>alert/);assert.doesNotMatch(safeJson({x:'</script><script>alert(1)</script>'}),/<\/script>/);assert.equal(seoFor(c,'/not-a-page','https://example.com').noindex,true);
 });

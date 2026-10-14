@@ -86,6 +86,7 @@ export const contentSchema = z.object({
     instagram: url,
     facebook: url,
     linkedin: url,
+    youtube: url.default(''),
     defaultSeo: seo,
     privacy: z.string().max(20000),
     terms: z.string().max(20000)

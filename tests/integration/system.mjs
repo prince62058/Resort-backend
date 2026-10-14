@@ -71,17 +71,77 @@ try {
  assert.equal((await request('/api/admin/enquiries')).json.items[0].name,'Integration Guest');
  assert.equal((await request('/api/admin/enquiries/'+enquiry.json.id,{method:'PATCH',body:{status:'in-progress',notes:'Follow up tomorrow'}})).response.status,200);
  browser=await chromium.launch({channel:'chrome'});const page=await browser.newPage({viewport:{width:1440,height:1050}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto(devBase+'/');await page.getByLabel('Email address',{exact:false}).fill(email);await page.getByLabel('Password',{exact:false}).fill(password);await page.getByRole('button',{name:'Sign in',exact:true}).click();await page.getByRole('heading',{name:'A little care. A better stay.'}).waitFor();
+ await page.goto(devBase+'/');await page.getByRole('heading',{name:'Welcome back.',exact:true}).waitFor();await mkdir('output/admin',{recursive:true});for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Login overflow at '+width);if(width===390)await page.screenshot({path:'output/admin/login-mobile.png',fullPage:true,animations:'disabled'});}await page.getByLabel('Email address',{exact:false}).fill(email);await page.getByLabel('Password',{exact:false}).fill(password);await page.getByRole('button',{name:'Sign in',exact:true}).click();await page.getByRole('heading',{name:'A little care. A better stay.'}).waitFor();
  assert.equal(await page.getByRole('link',{name:'Visit website',exact:false}).getAttribute('href'),base);
- await mkdir('output/admin',{recursive:true});await page.screenshot({path:'output/admin/dashboard-desktop.png',fullPage:true});
+ await mkdir('output/admin',{recursive:true});await page.screenshot({path:'output/admin/dashboard-desktop.png',fullPage:true,animations:'disabled'});
+ await page.getByRole('button',{name:'Open studio search',exact:true}).click();
+ await page.getByLabel('Search the studio',{exact:true}).fill('Garden Villa Test');
+ await page.getByRole('dialog').getByRole('button',{name:/Garden Villa Test/}).click();
+ assert.equal(await page.getByLabel('Name / title').inputValue(),'Garden Villa Test');
+ await page.keyboard.press('Control+k');await page.getByRole('dialog').waitFor();await page.keyboard.press('Escape');assert.equal(await page.getByRole('dialog').count(),0);
+ await page.getByRole('navigation').getByRole('button',{name:'Stays',exact:true}).click();
+ await page.screenshot({path:'output/admin/stays-desktop.png',fullPage:true,animations:'disabled'});
+ await page.getByRole('button',{name:/^Drafts/}).click();
+ assert.equal(await page.locator('.content-card').count(),c.rooms.filter(r=>r.status==='draft').length);
+ await page.getByRole('button',{name:/^All \d/}).click();
+ await page.getByLabel('Search content',{exact:true}).fill('no-matching-stay-please');
+ await page.getByRole('heading',{name:'No content found.',exact:true}).waitFor();
+ await page.getByRole('button',{name:'Show all content',exact:true}).click();
+ assert.equal(await page.locator('.content-card').count(),c.rooms.length);
+ const studioSections=['Overview','Pages & SEO','Stays','Experiences','Galleries','Journal','Banners & sections','Corner reels','Website copy','Media library','Guest enquiries','Site settings','Version history','Account'];
+ for(const width of [320,390,768,1440]) {
+   await page.setViewportSize({width,height:1000});
+   for(const section of studioSections) {
+     if(width<901) await page.getByRole('button',{name:'Open navigation',exact:true}).click();
+     await page.getByRole('navigation').getByRole('button',{name:section,exact:true}).click();
+     await page.getByRole('heading',{name:section==='Overview'?'A little care. A better stay.':section,exact:true}).waitFor();
+     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Admin overflow: '+section+' at '+width);
+     if([390,1440].includes(width)&&['Overview','Media library','Site settings','Guest enquiries'].includes(section)) await page.screenshot({path:'output/admin/studio-'+section.toLowerCase().replace(/[^a-z]+/g,'-')+'-'+width+'.png',fullPage:true,animations:'disabled'});
+   }
+ }
+ await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Open navigation',exact:true}).click();
+ await page.screenshot({path:'output/admin/navigation-mobile.png',animations:'disabled'});await page.keyboard.press('Escape');
+ assert.equal(await page.locator('.sidebar.open').count(),0);assert.equal(await page.evaluate(()=>document.body.style.overflow),'');
+ await page.setViewportSize({width:1440,height:1050});
+
  await page.getByRole('navigation').getByRole('button',{name:'Stays',exact:true}).click();await page.getByRole('button',{name:/Garden Villa Test/}).click();await page.getByLabel('Name / title').fill('Updated in Admin UI');await page.getByLabel('URL slug',{exact:true}).fill('premium-');await page.getByLabel('URL slug',{exact:true}).pressSequentially('garden-villa-mhow');assert.equal(await page.getByLabel('URL slug',{exact:true}).inputValue(),'premium-garden-villa-mhow');assert.equal(await page.getByRole('link',{name:'View live page',exact:false}).getAttribute('href'),base+'/rooms/premium-garden-villa-mhow');await page.getByLabel('Focus keywords').fill('resort, mhow');await page.getByRole('button',{name:'Save draft',exact:true}).click();await page.getByRole('status').filter({hasText:'Draft saved'}).waitFor();
  assert.ok(!(await request('/api/content')).json.content.rooms.some(r=>r.name==='Updated in Admin UI'));
  await page.getByRole('button',{name:'Publish changes'}).click();await page.getByRole('status').filter({hasText:'Published.'}).waitFor();
- await page.screenshot({path:'output/admin/stay-editor-desktop.png',fullPage:true});
+ await page.screenshot({path:'output/admin/stay-editor-desktop.png',fullPage:true,animations:'disabled'});
  assert.ok((await request('/api/content')).json.content.rooms.some(r=>r.name==='Updated in Admin UI'));
  const publicPage=await browser.newPage();await publicPage.goto(base+'/rooms/premium-garden-villa-mhow');await publicPage.getByRole('heading',{name:'Updated in Admin UI',exact:true}).waitFor();await publicPage.goto(base+'/weekend-retreat-mhow');await publicPage.getByRole('heading',{name:'Your weekend retreat',exact:true}).waitFor();assert.ok(await publicPage.getByText('A quiet weekend with your favourite people.',{exact:true}).isVisible());
  await publicPage.goto(base+'/privacy-at-the-nest');await publicPage.getByRole('heading',{name:'Owner policy update',exact:true}).waitFor();assert.equal(await publicPage.locator('.nest-newsletter').getByRole('link',{name:'Privacy policy',exact:true}).getAttribute('href'),'/privacy-at-the-nest');await publicPage.close();
- await page.getByRole('navigation').getByRole('button',{name:'Pages & SEO',exact:true}).click();await page.getByRole('button',{name:/Privacy policy.*SEO details added/}).click();assert.match(await page.getByLabel('Page content',{exact:false}).inputValue(),/Owner policy update/);await page.getByLabel('Last updated date').fill('2026-10-14');await page.getByLabel('Page content',{exact:false}).fill(privacy.body+'\n\nSaved from the policy editor.');await page.getByRole('button',{name:'Save draft',exact:true}).click();await page.getByRole('status').filter({hasText:'Draft saved'}).waitFor();assert.match((await request('/api/admin/content')).json.content.pages.find(p=>p.id==='privacy-policy').body,/Saved from the policy editor/);await page.screenshot({path:'output/admin/policy-editor-desktop.png',fullPage:true});
+ // Social profiles are owner-managed, and only published values reach the footer.
+ await page.getByRole('navigation').getByRole('button',{name:'Site settings',exact:true}).click();
+ const socialProfiles=[['instagram','Instagram','https://www.instagram.com/nest-test/'],['facebook','Facebook','https://www.facebook.com/nest-test/'],['linkedin','LinkedIn','https://www.linkedin.com/company/nest-test/'],['youtube','YouTube','https://www.youtube.com/@nest-test']];
+ assert.equal(await page.getByLabel('YouTube link',{exact:false}).inputValue(),'');
+ for(const [,label,url] of socialProfiles) await page.getByLabel(label+' link',{exact:false}).fill(url);
+ await page.getByRole('button',{name:'Save draft',exact:true}).click();await page.getByRole('status').filter({hasText:'Draft saved'}).waitFor();
+ const socialDraft=(await request('/api/admin/content')).json.content.settings;
+ for(const [key,,url] of socialProfiles) assert.equal(socialDraft[key],url);
+ assert.equal((await request('/api/content')).json.content.settings.youtube,'');
+ const socialPreview=await browser.newPage();await socialPreview.goto(base);await socialPreview.locator('.nest-footer').waitFor();
+ assert.equal(await socialPreview.getByRole('link',{name:'The Nature Nest on YouTube',exact:true}).count(),0);
+ await page.getByRole('button',{name:'Publish changes'}).click();await page.getByRole('status').filter({hasText:'Published.'}).waitFor();
+ await socialPreview.reload();await socialPreview.getByRole('link',{name:'The Nature Nest on YouTube',exact:true}).waitFor();
+ for(const [,label,url] of socialProfiles) {
+  const link=socialPreview.getByRole('link',{name:'The Nature Nest on '+label,exact:true});
+  assert.equal(await link.getAttribute('href'),url);assert.equal(await link.getAttribute('target'),'_blank');
+ }
+ for(const width of [320,390,768,1440]) {
+  await socialPreview.setViewportSize({width,height:900});
+  await socialPreview.locator('.nest-footer-social').scrollIntoViewIfNeeded();
+  assert.ok(await socialPreview.locator('.nest-footer-social').evaluate(el=>el.scrollWidth<=el.clientWidth),'Social footer overflow at '+width);
+  assert.ok(await socialPreview.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Site overflow at '+width);
+  assert.equal(await socialPreview.locator('.nest-footer-social a:visible').count(),4);
+  if([390,1440].includes(width)) await socialPreview.locator('.nest-footer-social').screenshot({path:'output/admin/footer-socials-'+width+'.png',animations:'disabled'});
+ }
+ await page.getByLabel('YouTube link',{exact:false}).fill('');await page.getByRole('button',{name:'Publish changes'}).click();await page.getByRole('status').filter({hasText:'Published.'}).waitFor();
+ await socialPreview.reload();await socialPreview.locator('.nest-footer').waitFor();
+ assert.equal(await socialPreview.locator('.nest-footer-social a').count(),3);
+ assert.equal(await socialPreview.getByRole('link',{name:'The Nature Nest on YouTube',exact:true}).count(),0);
+ await socialPreview.close();
+ await page.getByRole('navigation').getByRole('button',{name:'Pages & SEO',exact:true}).click();await page.getByRole('button',{name:/Privacy policy.*SEO details added/}).click();assert.match(await page.getByLabel('Page content',{exact:false}).inputValue(),/Owner policy update/);await page.getByLabel('Last updated date').fill('2026-10-14');await page.getByLabel('Page content',{exact:false}).fill(privacy.body+'\n\nSaved from the policy editor.');await page.getByRole('button',{name:'Save draft',exact:true}).click();await page.getByRole('status').filter({hasText:'Draft saved'}).waitFor();assert.match((await request('/api/admin/content')).json.content.pages.find(p=>p.id==='privacy-policy').body,/Saved from the policy editor/);await page.screenshot({path:'output/admin/policy-editor-desktop.png',fullPage:true,animations:'disabled'});
  await page.getByRole('navigation').getByRole('button',{name:'Journal',exact:true}).click();await page.getByRole('button',{name:/A cottage or a villa/}).click();await page.getByLabel('Story category').fill('Stay inspiration');await page.getByLabel('Feature this story').check();await page.getByLabel('URL slug',{exact:true}).fill('find-your-stay-in-mhow');await page.getByRole('button',{name:'Publish changes'}).click();await page.getByRole('status').filter({hasText:'Published.'}).waitFor();
  const journalData=(await request('/api/content')).json.content;assert.equal(journalData.posts.filter(p=>p.featured).length,1);assert.equal(journalData.posts.find(p=>p.featured).id,'cottage-or-villa');assert.equal(journalData.posts.find(p=>p.id==='cottage-or-villa').category,'Stay inspiration');
  const storyRedirect=await fetch(base+'/blog/cottage-or-private-villa-choose-your-stay-mhow',{redirect:'manual'});assert.equal(storyRedirect.status,301);assert.equal(storyRedirect.headers.get('location'),'/blog/find-your-stay-in-mhow');const storyHtml=await(await fetch(base+'/blog/find-your-stay-in-mhow')).text();assert.match(storyHtml,/Start with your people/);assert.match(storyHtml,/BlogPosting/);
@@ -98,15 +158,15 @@ try {
  await page.getByRole('button',{name:'Publish changes'}).click();await page.getByRole('status').filter({hasText:'Published.'}).waitFor();
  const publishedReels=(await request('/api/content')).json.content.reels;
  assert.equal(publishedReels.items.length,1);assert.equal(publishedReels.items[0].title,'Moments edited in the studio');assert.equal(publishedReels.items[0].url,'https://www.instagram.com/reel/Deb2fCYtVQK/');
- await page.screenshot({path:'output/admin/reels-desktop.png',fullPage:true});
+ await page.screenshot({path:'output/admin/reels-desktop.png',fullPage:true,animations:'disabled'});
  for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Reel editor overflow at '+width);}
  await page.setViewportSize({width:1440,height:1000});
  const reelsPreview=await browser.newPage();await reelsPreview.goto(base);await reelsPreview.getByRole('button',{name:'Watch reel: Moments edited in the studio'}).waitFor();await reelsPreview.close();
  await page.reload();await page.getByRole('heading',{name:'A little care. A better stay.'}).waitFor();
- await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Open navigation',exact:true}).click();await page.getByRole('navigation').getByRole('button',{name:'Pages & SEO',exact:true}).click();await page.screenshot({path:'output/admin/pages-mobile.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Open navigation',exact:true}).click();await page.getByRole('navigation').getByRole('button',{name:'Pages & SEO',exact:true}).click();await page.screenshot({path:'output/admin/pages-mobile.png',fullPage:true,animations:'disabled'});
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
- await page.getByRole('button',{name:/Home.*SEO details added/}).click();await page.screenshot({path:'output/admin/editor-mobile.png',fullPage:true});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
- await page.getByRole('button',{name:'Choose image',exact:true}).click();await page.getByRole('dialog').waitFor();await page.screenshot({path:'output/admin/media-mobile.png',fullPage:true});assert.ok(await page.getByRole('dialog').evaluate(el=>el.scrollWidth<=el.clientWidth+1));await page.getByRole('button',{name:/Select garden-/}).click();await page.getByRole('button',{name:'Save draft',exact:true}).click();await page.getByRole('status').filter({hasText:'Draft saved'}).waitFor();
+ await page.getByRole('button',{name:/Home.*SEO details added/}).click();await page.screenshot({path:'output/admin/editor-mobile.png',fullPage:true,animations:'disabled'});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.getByRole('button',{name:'Choose image',exact:true}).click();await page.getByRole('dialog').waitFor();await page.screenshot({path:'output/admin/media-mobile.png',fullPage:true,animations:'disabled'});assert.ok(await page.getByRole('dialog').evaluate(el=>el.scrollWidth<=el.clientWidth+1));await page.getByRole('button',{name:/Select garden-/}).click();await page.getByRole('button',{name:'Save draft',exact:true}).click();await page.getByRole('status').filter({hasText:'Draft saved'}).waitFor();
  for(const width of [320,390,768,1024,1440]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Admin overflow at '+width);}
  assert.deepEqual(errors,[]);
  const newPassword=randomBytes(24).toString('hex');result=await request('/api/admin/password',{method:'POST',body:{currentPassword:password,password:newPassword}});assert.equal(result.response.status,200);
