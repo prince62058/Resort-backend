@@ -82,3 +82,27 @@ export async function migrateJournal(database) {
   }
   throw new Error('Content changed during the journal upgrade. Please retry.');
 }
+
+export const reelsMigration = 'corner-reels-2026-10-14';
+export function withReels(content) {
+  const next = structuredClone(content);
+  next.reels ??= structuredClone(seed.reels);
+  return next;
+}
+
+export async function migrateReels(database) {
+  const collection = database.collection('cms_content');
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const current = await collection.findOne({ _id: 'site' });
+    if (!current || current.migrations?.includes(reelsMigration)) return;
+    const result = await collection.updateOne({ _id: 'site', version: current.version, migrations: { $ne: reelsMigration } }, {
+      $set: { draft: withReels(current.draft), published: withReels(current.published), updatedAt: new Date() },
+      $inc: { version: 1 }, $addToSet: { migrations: reelsMigration }
+    });
+    if (result.modifiedCount) {
+      await database.collection('cms_revisions').insertOne({ version: current.version + 1, content: current.draft, published: true, at: new Date(), by: 'system:corner-reels' });
+      return;
+    }
+  }
+  throw new Error('Content changed during the reel upgrade. Please retry.');
+}

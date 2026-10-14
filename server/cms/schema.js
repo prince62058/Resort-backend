@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { instagramReelUrl, directVideoUrl, emptyReels } from '../../shared/reels.js';
 import { routesFor } from '../../shared/content.js';
 import { validMediaPath, imageType } from '../media-paths.js';
 const text = z.string().max(2000);
@@ -43,6 +44,18 @@ const page = z.object({
   images
 });
 export const contentSchema = z.object({
+  reels: z.object({
+    enabled: z.boolean(),
+    label: z.string().trim().min(1).max(70),
+    items: z.array(z.object({
+      id: z.string().regex(/^[a-zA-Z0-9-]{1,100}$/),
+      title: z.string().trim().min(1).max(80),
+      url: z.string().max(2000).refine(v => Boolean(instagramReelUrl(v)), 'Use a public https://www.instagram.com/reel/... link.').transform(instagramReelUrl),
+      poster: image.or(z.literal('')),
+      videoUrl: z.string().max(2000).refine(v => !v || Boolean(directVideoUrl(v)), 'Use a direct HTTPS .mp4 or .webm link, or leave this empty.').transform(v => v ? directVideoUrl(v) : ''),
+      enabled: z.boolean()
+    })).max(6).refine(items => new Set(items.map(i => i.id)).size === items.length, 'Each reel needs a unique ID.')
+  }).default(() => structuredClone(emptyReels)),
   settings: z.object({
     name: text,
     fullName: text,

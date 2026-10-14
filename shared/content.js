@@ -2,6 +2,7 @@ export const collections = ['pages', 'rooms', 'experiences', 'galleries', 'posts
 export function publicContent(content) {
   const result = structuredClone(content);
   for (const key of collections) result[key] = result[key].filter(item => item.status === 'published').sort((a, b) => a.order - b.order);
+  if (result.reels) result.reels.items = result.reels.items.filter(item => item.enabled);
   return result;
 }
 export function pagePath(content, template) {

@@ -1883,5 +1883,27 @@
     "journal.relatedTitle": "One story leads to ",
     "journal.relatedAccent": "another.",
     "journal.missing": "This story is taking a little break."
+  },
+  "reels": {
+    "enabled": true,
+    "label": "Little moments at the nest",
+    "items": [
+      {
+        "id": "nest-reel-deb2fcytvqk",
+        "title": "A little closer to nature",
+        "url": "https://www.instagram.com/reel/Deb2fCYtVQK/",
+        "poster": "enhanced/story/story-arrival-v1.webp",
+        "videoUrl": "",
+        "enabled": true
+      },
+      {
+        "id": "nest-reel-dd3ncyjo2lp",
+        "title": "Your next little escape",
+        "url": "https://www.instagram.com/reel/Dd3ncYjo2LP/",
+        "poster": "enhanced/pool-regenerated-v1.webp",
+        "videoUrl": "",
+        "enabled": true
+      }
+    ]
   }
 }

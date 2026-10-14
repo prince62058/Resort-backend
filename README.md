@@ -53,3 +53,13 @@ For full verification, clone/build the site and admin as sibling `site/` and `ad
 `npm run media:sync` and `npm run media:verify` are optional local maintenance commands. They read the sibling `site/public/assets` directory; set `MEDIA_SOURCE_DIR` to a different local image folder if needed. Existing Atlas images do not need re-uploading for this split.
 
 [Complete deployment guide](https://github.com/prince62058/Resort-site/blob/main/DEPLOYMENT.md)
+
+## Corner reels
+
+Manage the floating reel cards in **Admin → Corner reels**. Add a public `https://www.instagram.com/reel/.../` link, title and a cover from the media library. Enable/disable individual reels or the entire widget, reorder up to six entries, then use **Save draft** or **Publish changes**. Two covers appear at a time in the bottom-left corner; visitors can minimize them for the current browsing session. The widget hides while the footer or booking/menu overlay is visible so guest controls stay reachable.
+
+Instagram is loaded only after the visitor opens a reel. The full-size dialog has previous/next controls, an Instagram fallback link, keyboard dismissal and mobile sizing. Instagram controls its own embed playback and may require a second tap, login or opening Instagram. Public content must allow embedding. Cover photos are manually selected; they are not automatically fetched Instagram thumbnails.
+
+For an actual moving miniature preview, enter the original video's **direct HTTPS MP4/WebM URL** in the optional field. This enables a muted looping preview and a native video player with controls. Preview motion pauses with the site's motion control, reduced-motion preference or hidden tab. An unavailable video falls back to Instagram. No Instagram downloading/scraping, API credentials or forced autoplay are used.
+
+Deploy backend, admin and site together for this feature. The backend adds the two requested initial links only when the existing content has no reel configuration, preserving owner edits and drafts. Subsequent changes use the regular CMS publishing workflow.

@@ -22,7 +22,7 @@ const {createApp:createSite}=await import(pathToFileURL(join(siteDir,'server/app
 const {createApp:createAdmin}=await import(pathToFileURL(join(adminDir,'server/app.js')));
 try {
  await client.connect();const db=client.db(dbName);const store={db,assets:db.collection('media_assets'),files:db.collection('resort_media.files'),bucket:new GridFSBucket(db,{bucketName:'resort_media'})};
- const original=structuredClone(seed);original.pages=original.pages.filter(p=>!guestPageIds.includes(p.id));original.posts=original.posts.filter(p=>!journalPostIds.includes(p.id));original.pages.find(p=>p.template==='blog').nav=false;const pending=structuredClone(original);pending.rooms[0].summary='Pending owner draft';
+ const original=structuredClone(seed);delete original.reels;original.pages=original.pages.filter(p=>!guestPageIds.includes(p.id));original.posts=original.posts.filter(p=>!journalPostIds.includes(p.id));original.pages.find(p=>p.template==='blog').nav=false;const pending=structuredClone(original);pending.rooms[0].summary='Pending owner draft';
  await db.collection('cms_content').insertOne({_id:'site',version:1,draft:pending,published:original,redirects:{},updatedAt:new Date(),publishedAt:new Date()});
  server=createApp({getStore:async()=>store,configured:()=>true,authOptions:{setupToken:()=>token,production:()=>false}}).listen(0,'127.0.0.1');await new Promise(r=>server.once('listening',r));const apiBase='http://127.0.0.1:'+server.address().port;
  siteServer=createSite({backendUrl:apiBase,root:siteDir,production:false}).listen(0,'127.0.0.1');await new Promise(r=>siteServer.once('listening',r));const base='http://127.0.0.1:'+siteServer.address().port;
@@ -86,6 +86,22 @@ try {
  const journalData=(await request('/api/content')).json.content;assert.equal(journalData.posts.filter(p=>p.featured).length,1);assert.equal(journalData.posts.find(p=>p.featured).id,'cottage-or-villa');assert.equal(journalData.posts.find(p=>p.id==='cottage-or-villa').category,'Stay inspiration');
  const storyRedirect=await fetch(base+'/blog/cottage-or-private-villa-choose-your-stay-mhow',{redirect:'manual'});assert.equal(storyRedirect.status,301);assert.equal(storyRedirect.headers.get('location'),'/blog/find-your-stay-in-mhow');const storyHtml=await(await fetch(base+'/blog/find-your-stay-in-mhow')).text();assert.match(storyHtml,/Start with your people/);assert.match(storyHtml,/BlogPosting/);
  const journalPreview=await browser.newPage();await journalPreview.goto(base+'/blog');await journalPreview.locator('.journal-feature').getByRole('heading',{name:'A cottage or a villa? Find your kind of stay.'}).waitFor();await journalPreview.getByRole('button',{name:'Stay inspiration',exact:true}).click();await journalPreview.locator('.journal-story-card').getByRole('heading',{name:'A cottage or a villa? Find your kind of stay.'}).waitFor();await journalPreview.close();
+ await page.getByRole('navigation').getByRole('button',{name:'Corner reels',exact:true}).click();
+ assert.equal(await page.getByLabel('Instagram Reel link').count(),2);
+ await page.getByLabel('Reel title',{exact:true}).first().fill('Moments edited in the studio');
+ await page.getByLabel('Instagram Reel link').first().fill('https://instagram.com/reel/Deb2fCYtVQK/?tracking=test');
+ await page.getByLabel('Widget heading').click();
+ await page.getByRole('button',{name:'Move reel 2 earlier',exact:true}).click();
+ await page.getByLabel('Show this reel',{exact:true}).first().uncheck();
+ await page.getByRole('button',{name:'Save draft',exact:true}).click();await page.getByRole('status').filter({hasText:'Draft saved'}).waitFor();
+ assert.equal((await request('/api/content')).json.content.reels.items.length,2);
+ await page.getByRole('button',{name:'Publish changes'}).click();await page.getByRole('status').filter({hasText:'Published.'}).waitFor();
+ const publishedReels=(await request('/api/content')).json.content.reels;
+ assert.equal(publishedReels.items.length,1);assert.equal(publishedReels.items[0].title,'Moments edited in the studio');assert.equal(publishedReels.items[0].url,'https://www.instagram.com/reel/Deb2fCYtVQK/');
+ await page.screenshot({path:'output/admin/reels-desktop.png',fullPage:true});
+ for(const width of [320,390,768,1440]){await page.setViewportSize({width,height:900});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Reel editor overflow at '+width);}
+ await page.setViewportSize({width:1440,height:1000});
+ const reelsPreview=await browser.newPage();await reelsPreview.goto(base);await reelsPreview.getByRole('button',{name:'Watch reel: Moments edited in the studio'}).waitFor();await reelsPreview.close();
  await page.reload();await page.getByRole('heading',{name:'A little care. A better stay.'}).waitFor();
  await page.setViewportSize({width:390,height:844});await page.getByRole('button',{name:'Open navigation',exact:true}).click();await page.getByRole('navigation').getByRole('button',{name:'Pages & SEO',exact:true}).click();await page.screenshot({path:'output/admin/pages-mobile.png',fullPage:true});
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
