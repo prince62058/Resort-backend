@@ -12,6 +12,11 @@ test('content validation rejects reserved, duplicate and unsafe URL input',()=>{
  assert.equal(parseContent(seed).rooms.length,12);
  for(const mutate of [c=>{c.pages[1].slug='admin'},c=>{c.rooms[1].slug=c.rooms[0].slug},c=>{c.settings.maps='javascript:alert(1)'},c=>{c.settings.siteUrl='not a URL'},c=>{c.rooms[0].images=['../.env']},c=>{c.pages[0].status='draft'},c=>{c.pages[1].slug='same';c.pages[2].slug='same'}]){const c=structuredClone(seed);mutate(c);assert.throws(()=>parseContent(c),e=>e.status===400);}
 });
+test('content validation keeps long articles out of the main navigation',()=>{
+ const longName=c=>{const page=c.pages.find(p=>p.template==='custom')||c.pages.find(p=>!['home','rooms','services','galleries','about','contact','blog'].includes(p.template));page.name='Why Winter Is Perfect for Couples Near Indore Extra Words';page.nav=true;page.body='short';};
+ const longArticle=c=>{const page=c.pages.find(p=>p.template==='custom')||c.pages.at(-1);page.template='custom';page.name='Winter escape';page.nav=true;page.body='x'.repeat(2600);};
+ for(const mutate of [longName,longArticle]){const c=structuredClone(seed);mutate(c);assert.throws(()=>parseContent(c),e=>e.status===400);}
+});
 test('published content filters drafts and resolves edited slugs consistently',()=>{
  const c=structuredClone(seed);c.pages.find(p=>p.template==='rooms').slug='luxury-stays';c.rooms[0].slug='green-villa';c.rooms[1].status='draft';
  const pub=publicContent(c);assert.equal(pub.rooms.length,11);assert.equal(linkTo(pub,'/rooms/'+c.rooms[0].id),'/luxury-stays/green-villa');assert.equal(resolveRoute(pub,'/luxury-stays/green-villa').item.id,c.rooms[0].id);

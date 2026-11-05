@@ -193,6 +193,18 @@ export const contentSchema = z.object({
     message: 'Only the homepage can have an empty slug.',
     path: ['pages']
   });
+  c.pages.forEach((page, index) => {
+    if (page.nav && String(page.name || '').trim().length > 28) ctx.addIssue({
+      code: 'custom',
+      message: 'Main navigation labels must stay under 28 characters. Use Journal for long articles, or shorten the page name / turn off “Show in main navigation”.',
+      path: ['pages', index, 'name']
+    });
+    if (page.nav && ['custom', 'legal', 'support'].includes(page.template) && String(page.body || '').length > 2500) ctx.addIssue({
+      code: 'custom',
+      message: 'Long articles belong in Journal, not in the main navigation. Move this story to Journal or turn off “Show in main navigation”.',
+      path: ['pages', index, 'nav']
+    });
+  });
 });
 export function parseContent(value) {
   const result = contentSchema.safeParse(value);
