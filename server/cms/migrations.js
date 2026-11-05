@@ -106,3 +106,59 @@ export async function migrateReels(database) {
   }
   throw new Error('Content changed during the reel upgrade. Please retry.');
 }
+
+export const winterArticleMigration = 'winter-couples-article-to-journal-2026-11-05';
+const winterPageId = '11fadcb6-41ef-4ae8-9336-5180a8c7fef2';
+const winterPagePath = '/why-winter-is-the-perfect-season-for-newlywed-couples-to-enjoy-a-romantic-resort-stay-near-indore';
+const winterBlogPath = '/blog/why-winter-is-the-perfect-season-for-newlywed-couples-to-enjoy-a-romantic-resort-stay-near-indore';
+
+function pageToWinterPost(page) {
+  const body = String(page.body || '').replace(/^#\s+.+\n+/, '').trim();
+  return {
+    id: 'winter-couples-escape',
+    slug: page.slug,
+    name: page.name,
+    order: 0,
+    status: page.status === 'published' ? 'published' : 'draft',
+    seo: page.seo,
+    category: 'Romantic escapes',
+    featured: false,
+    summary: String(page.subtitle || page.seo?.description || '').replace(/\s+/g, ' ').trim(),
+    body,
+    images: page.images?.length ? page.images : ['enhanced/story/story-arrival-v1.webp'],
+    date: '2026-11-05'
+  };
+}
+
+export function withWinterJournalPost(content) {
+  const next = structuredClone(content);
+  const page = next.pages.find(p => p.id === winterPageId || p.slug === winterPagePath.slice(1));
+  if (!page) return next;
+  if (!next.posts.some(p => p.id === 'winter-couples-escape' || p.slug === page.slug)) {
+    next.posts.unshift(pageToWinterPost(page));
+  }
+  next.pages = next.pages.filter(p => p.id !== page.id);
+  return next;
+}
+
+export async function migrateWinterArticle(database) {
+  const collection = database.collection('cms_content');
+  for (let attempt = 0; attempt < 5; attempt++) {
+    const current = await collection.findOne({ _id: 'site' });
+    if (!current || current.migrations?.includes(winterArticleMigration)) return;
+    const draft = withWinterJournalPost(current.draft);
+    const published = withWinterJournalPost(current.published);
+    const redirects = { ...(current.redirects || {}), [winterPagePath]: winterBlogPath };
+    delete redirects[winterBlogPath];
+    const result = await collection.updateOne({ _id: 'site', version: current.version, migrations: { $ne: winterArticleMigration } }, {
+      $set: { draft, published, redirects, updatedAt: new Date() },
+      $inc: { version: 1 },
+      $addToSet: { migrations: winterArticleMigration }
+    });
+    if (result.modifiedCount) {
+      await database.collection('cms_revisions').insertOne({ version: current.version + 1, content: draft, published: true, at: new Date(), by: 'system:winter-journal' });
+      return;
+    }
+  }
+  throw new Error('Content changed during the winter article upgrade. Please retry.');
+}

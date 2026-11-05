@@ -1,6 +1,6 @@
 import seed from '../../shared/seed.json' with { type: 'json' };
 import { publicContent, routesFor } from '../../shared/content.js';
-import { migrateGuestPages, migrateJournal, migrateReels } from './migrations.js';
+import { migrateGuestPages, migrateJournal, migrateReels, migrateWinterArticle } from './migrations.js';
 export function createContentStore(getStore, configured) {
   let cached,
     expires = 0,
@@ -39,6 +39,7 @@ export function createContentStore(getStore, configured) {
       await migrateGuestPages(database);
       await migrateJournal(database);
       await migrateReels(database);
+      await migrateWinterArticle(database);
     })().catch(error => {
       initialization = undefined;
       throw error;

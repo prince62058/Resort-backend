@@ -14,6 +14,7 @@ export function documentBlocks(body, settings = {}) {
   for (const line of text.replace(/\r\n/g, '\n').split('\n')) {
     const value = line.trim();
     if (!value) { blocks.push({ type: 'break' }); continue; }
+    if (/^#\s+/.test(value)) continue;
     const match = /^(#{2,3})\s+(.+)$/.exec(value);
     if (match) blocks.push({ type: match[1].length === 2 ? 'h2' : 'h3', text: match[2], id: 'section-' + ++heading });
     else if (/^-\s+/.test(value)) {
