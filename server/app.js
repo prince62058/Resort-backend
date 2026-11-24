@@ -16,6 +16,17 @@ export function createApp({getStore = getMediaStore, configured = databaseConfig
   const cache = createMediaCache(path.join(root, 'public/assets'));
   app.disable('x-powered-by');
   app.use((req,res,next)=>{res.set({'X-Content-Type-Options':'nosniff','Referrer-Policy':'strict-origin-when-cross-origin','X-Frame-Options':'SAMEORIGIN'});next();});
+  app.use((req, res, next) => {
+    const allowed = (process.env.CORS_ORIGIN || '*').trim() || '*';
+    const requestOrigin = req.get('origin');
+    const value = allowed === '*' ? '*' : (requestOrigin && allowed.split(',').map(v => v.trim()).includes(requestOrigin) ? requestOrigin : allowed.split(',')[0].trim());
+    res.set('Access-Control-Allow-Origin', value);
+    res.set('Access-Control-Allow-Methods', 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS');
+    res.set('Access-Control-Allow-Headers', req.get('access-control-request-headers') || 'Content-Type, X-CMS-Request, X-CSRF-Token');
+    res.set('Access-Control-Max-Age', '86400');
+    if (req.method === 'OPTIONS') return res.status(204).end();
+    next();
+  });
   if(process.env.NODE_ENV === 'production') app.set('trust proxy', 1);
   const cms = suppliedCms || createContentStore(getStore, configured);
   app.get('/api/content', async (req,res) => {res.set('Cache-Control','no-cache').json(await cms.published());});
